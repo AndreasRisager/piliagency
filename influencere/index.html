@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="./script.js" defer></script>
+    <script src="../src/navbar.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -18,42 +19,66 @@
         },
       };
     </script>
-    <title>Influencere — Insta Agency</title>
+    <title>Influencere — Pili Agency</title>
   </head>
   <body>
-    <header class="w-full px-8 text-gray-700 bg-white border-b">
-      <div
-        class="container flex flex-col flex-wrap items-center justify-between py-5 mx-auto md:flex-row max-w-7xl"
-      >
-        <div class="relative flex flex-col md:flex-row">
-          <a
-            href="/"
-            class="flex items-center mb-5 font-medium text-gray-900 lg:w-auto lg:items-center lg:justify-center md:mb-0"
+    <header class="px-8 text-gray-700 bg-white border-b">
+      <nav class="py-4 max-w-7xl mx-auto">
+        <div
+          class="container flex flex-wrap justify-between items-center mx-auto"
+        >
+          <a href="/" class="text-2xl font-semibold"
+            >Pili Agency<span class="text-beige">.</span></a
           >
-            <span class="mx-auto text-xl font-bold leading-none text-gray-900 select-none"
-              >Insta Agency<span class="text-indigo-600">.</span></span
-            >
-          </a>
-          <nav
-            class="flex uppercase flex-wrap items-center mb-5 text-base md:mb-0 md:pl-8 md:ml-8 md:border-l md:border-gray-200"
+          <button
+            id="menuButton"
+            data-collapse-toggle="navbar"
+            type="button"
+            class="md:hidden relative w-10 h-10"
+            aria-controls="navbar"
+            aria-expanded="false"
           >
-            <a href="/" class="mr-6 font-medium leading-6 text-gray-600 hover:text-gray-900"
-              >Forside</a
+            <span class="sr-only">open main menu</span>
+            <div class="menuButton-line1 inset-0 w-7 h-0.5 m-auto rounded-full bg-gray-600 transition-rotate duration-300"></div>
+            <div class="menuButton-line2 inset-0 w-7 h-0.5 mt-1.5 m-auto rounded-full bg-gray-600 transition-rotate duration-300"></div>
+          </button>
+          <div class="hidden w-full md:block md:w-auto transition-all duration-300 max-h-0 overflow-hidden md:max-h-full" id="navbar">
+            <ul
+              class="flex flex-col mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white uppercase"
             >
-            <a href="/influencere" class="font-medium leading-6 text-gray-600 hover:text-gray-900"
-              >Influencere</a
-            >
-          </nav>
+              <li>
+                <a
+                  href="/"
+                  class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-beige md:p-0"
+                  >Forside</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/cases"
+                  class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-beige md:p-0"
+                  >Cases</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/influencere"
+                  class="block py-2 pr-4 pl-3 text-white bg-beige rounded md:bg-transparent md:text-beige md:p-0"
+                  aria-current="page"
+                  >Influencere</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/#kontakt"
+                  class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-beige md:p-0"
+                  >Kontakt os</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="inline-flex items-center md:ml-5 space-x-6 lg:justify-end">
-          <a
-            href="/#kontakt"
-            class="inline-flex items-center justify-center px-8 py-2 text-base font-medium leading-6 text-white whitespace-no-wrap bg-beige border border-transparent shadow-sm hover:bg-beigehover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-beigehover rounded-lg"
-          >
-            Kontakt os
-          </a>
-        </div>
-      </div>
+      </nav>
     </header>
 
     <!-- Hero -->
@@ -65,64 +90,77 @@
           Vores Influencere.
         </h1>
         <p class="text-base text-gray-500 sm:max-w-md lg:text-xl md:max-w-3xl">
-          Fremragende udvalg af influencere sikrer, at dit budskab når frem til de rigtige
-          målgrupper.
+          Fremragende udvalg af influencere sikrer, at dit budskab når frem til
+          de rigtige målgrupper.
         </p>
       </div>
     </section>
 
     <!-- Influencers -->
     <section class="pb-20">
-      <div class="container max-w-6xl mx-auto px-4 sm:px-20 md:px-32 lg:px-16 flex flex-col gap-20">
+      <div
+        class="container max-w-6xl mx-auto px-4 sm:px-20 md:px-32 lg:px-16 flex flex-col gap-20"
+      >
         <article class="grid md:grid-cols-2 gap-8">
           <div>
-            <img src="../src/images/anna_david.jpg" alt="Anna David" class="rounded-2xl" />
+            <img
+              src="../src/images/anna_david.jpg"
+              alt="Anna David"
+              class="rounded-2xl"
+            />
           </div>
           <div>
             <h2 class="text-4xl text-gray-900 mb-3 capitalize">Anna David</h2>
             <div class="text-gray-500">
               <p class="mb-4">
-                Kunstner Anna David er kendt som en fremragende sanger og sangskriver, som formår at
-                bjergtage sit publikum med sin musik og sprøde smukke stemme.
+                Kunstner Anna David er kendt som en fremragende sanger og
+                sangskriver, som formår at bjergtage sit publikum med sin musik
+                og sprøde smukke stemme.
               </p>
               <p class="mb-4">
-                Anna David har været en kendt personlighed længe. Som 15 årig debuterede Anna som
-                sanger på den internationale scene og samtidig som skuespiller i Lars von Triers
-                musicalfilm "Dancer in the Dark". Året var 2000.
+                Anna David har været en kendt personlighed længe. Som 15 årig
+                debuterede Anna som sanger på den internationale scene og
+                samtidig som skuespiller i Lars von Triers musicalfilm "Dancer
+                in the Dark". Året var 2000.
               </p>
               <p class="mb-4">
-                Anna David er en smuk kvinde med en varm og fængslende udstråling. Hendes lange
-                viltre krøller og atletiske krop vidner om Annas fritids passion. Hun elsker at være
-                fysisk aktiv.
+                Anna David er en smuk kvinde med en varm og fængslende
+                udstråling. Hendes lange viltre krøller og atletiske krop vidner
+                om Annas fritids passion. Hun elsker at være fysisk aktiv.
               </p>
               <div class="transition-all duration-300 max-h-0 overflow-hidden">
                 <p class="mb-4">
-                  Hun har etableret en fodboldklub for mødre i lokalområdet og er vild med at spille
-                  fodbold. Hun spiller badminton og elsker at tage på vandreture med sin familie i
-                  DK og i udlandet.
+                  Hun har etableret en fodboldklub for mødre i lokalområdet og
+                  er vild med at spille fodbold. Hun spiller badminton og elsker
+                  at tage på vandreture med sin familie i DK og i udlandet.
                 </p>
                 <p class="mb-4">
-                  Anna er mor til 3 vidunderlige børn: Alba på 11 år, et kreativt barn, som har
-                  dubbet siden 8-årsalderen. Noam på 3 ½ år, som frygtløst tager enhver udfordring
-                  op og er en kærlig stor basse. LilleBror på 2 mdr. som er stærk og harmonisk og
+                  Anna er mor til 3 vidunderlige børn: Alba på 11 år, et
+                  kreativt barn, som har dubbet siden 8-årsalderen. Noam på 3 ½
+                  år, som frygtløst tager enhver udfordring op og er en kærlig
+                  stor basse. LilleBror på 2 mdr. som er stærk og harmonisk og
                   allerede har vist at han er den sødeste Tour Baby.
                 </p>
                 <p class="mb-4">
-                  Til trods for, at Anna har stået på de største scener og medvirket i de største TV
-                  Shows har hun aldrig mistet jordforbindelsen. (selv om hun ALTID optræder i høje
-                  stiletter) Hun er helt i øjenhøjde med sine fans og ja med alle.
+                  Til trods for, at Anna har stået på de største scener og
+                  medvirket i de største TV Shows har hun aldrig mistet
+                  jordforbindelsen. (selv om hun ALTID optræder i høje
+                  stiletter) Hun er helt i øjenhøjde med sine fans og ja med
+                  alle.
                 </p>
                 <p class="mb-4">
-                  Anna er fyldt 37 år. Hun stråler med uformindsket styrke og hendes skønhed
-                  fascinerer måske ekstra meget i en tid, hvor naturlig skønhed uden fillers og
-                  kirurgi blandt kendte bliver mere og mere sjældent. Det skal ikke misforstås. Anna
-                  er forfængelig. Hun forsager ikke sminke. Tværtimod er hun både til lækker make-up
-                  og flotte negle.
+                  Anna er fyldt 37 år. Hun stråler med uformindsket styrke og
+                  hendes skønhed fascinerer måske ekstra meget i en tid, hvor
+                  naturlig skønhed uden fillers og kirurgi blandt kendte bliver
+                  mere og mere sjældent. Det skal ikke misforstås. Anna er
+                  forfængelig. Hun forsager ikke sminke. Tværtimod er hun både
+                  til lækker make-up og flotte negle.
                 </p>
                 <p class="mb-4">
-                  Lige nu er hun igen i gang med at give koncerter og filme. Hendes kreativitet
-                  synes uden grænser og omfatter i øvrigt også at male og at indrette familiens
-                  bolig som et både trygt og fortryllende univers.
+                  Lige nu er hun igen i gang med at give koncerter og filme.
+                  Hendes kreativitet synes uden grænser og omfatter i øvrigt
+                  også at male og at indrette familiens bolig som et både trygt
+                  og fortryllende univers.
                 </p>
               </div>
               <button class="block mb-4" data-readmore>
@@ -137,50 +175,58 @@
                   <path d="M44 45L87.3013 0H0.69873L44 45Z" fill="black" />
                 </svg>
               </button>
-              Instagram:
-              <a
-                class="text-blue-500"
-                href="https://instagram.com/annadavidmusic?igshid=YmMyMTA2M2Y="
-                target="_blank"
-                rel="noopener noreferrer"
-                >@annadavidmusic</a
-              >
+              <p>
+                Instagram:
+                <a
+                  class="text-blue-500"
+                  href="https://instagram.com/annadavidmusic?igshid=YmMyMTA2M2Y="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >@annadavidmusic</a
+                >
+              </p>
             </div>
           </div>
         </article>
         <article class="grid md:grid-cols-2 gap-8">
           <div>
-            <img src="../src/images/simone_lykke.jpg" alt="Simone Lykke" class="rounded-2xl" />
+            <img
+              src="../src/images/simone_lykke.jpg"
+              alt="Simone Lykke"
+              class="rounded-2xl"
+            />
           </div>
           <div>
             <h2 class="text-4xl text-gray-900 mb-3 capitalize">Simone Lykke</h2>
             <div class="text-gray-500">
               <p class="mb-4">
-                Simone Lykke slog for alvor igennem i 2016 i den anmelderroste danske biograffilm
-                Hundeliv.
+                Simone Lykke slog for alvor igennem i 2016 i den anmelderroste
+                danske biograffilm Hundeliv.
               </p>
               <p class="mb-4">
-                Siden da har hun slået sit navn fast i både ind- og udland, som alt fra den den
-                tjekkede skønhedsdronning Amanda i Friheden 2 til Benedikte Skans i hit-serien
-                Kastanjemanden.
+                Siden da har hun slået sit navn fast i både ind- og udland, som
+                alt fra den den tjekkede skønhedsdronning Amanda i Friheden 2
+                til Benedikte Skans i hit-serien Kastanjemanden.
               </p>
               <p class="mb-4">
-                På instagram er Simone en passioneret, æstetisk og humoristisk kvinde, der tager os
-                med ind i familielivet med hendes datter Wilma på 1,5 år, som er svær ikke at falde
-                pladask for og ind i hendes og hendes kæreste Marcels nyligt totalrenoverede hjem,
+                På instagram er Simone en passioneret, æstetisk og humoristisk
+                kvinde, der tager os med ind i familielivet med hendes datter
+                Wilma på 1,5 år, som er svær ikke at falde pladask for og ind i
+                hendes og hendes kæreste Marcels nyligt totalrenoverede hjem,
                 hvor indretning og bæredygtige valg er i højsædet.
               </p>
               <div class="transition-all duration-300 max-h-0 overflow-hidden">
                 <p class="mb-4">
-                  Hun lader os også komme bag kameraet på de forskellige projekter, hun laver og
-                  ikke mindst ind i hendes hjerte, hvor netop især bæredygtighed er noget, Simone
-                  gerne vil slå et slag for.
+                  Hun lader os også komme bag kameraet på de forskellige
+                  projekter, hun laver og ikke mindst ind i hendes hjerte, hvor
+                  netop især bæredygtighed er noget, Simone gerne vil slå et
+                  slag for.
                 </p>
                 <p class="mb-4">
-                  Simone har generelt ikke svært ved at tage de mere vigtige emner op, såsom sorg,
-                  angst, bæredygtighed osv., og Simones online univers rummer enormt meget
-                  oprigtighed og inspiration til at gøre en forskel og samtidigt få sig et godt
-                  grin.
+                  Simone har generelt ikke svært ved at tage de mere vigtige
+                  emner op, såsom sorg, angst, bæredygtighed osv., og Simones
+                  online univers rummer enormt meget oprigtighed og inspiration
+                  til at gøre en forskel og samtidigt få sig et godt grin.
                 </p>
               </div>
               <button class="block mb-4" data-readmore>
@@ -208,25 +254,32 @@
         </article>
         <article class="grid md:grid-cols-2 gap-8">
           <div>
-            <img src="../src/images/dorthe_lund.jpg" alt="Dorthe Lund" class="rounded-2xl" />
+            <img
+              src="../src/images/dorthe_lund.jpg"
+              alt="Dorthe Lund"
+              class="rounded-2xl"
+            />
           </div>
           <div>
             <h2 class="text-4xl text-gray-900 mb-3 capitalize">Dorthe Lund</h2>
             <div class="text-gray-500">
               <p class="mb-4">
-                Dorthe Lund er kendt for hendes pæne univers og hendes oprigtighed hos sine følgere.
+                Dorthe Lund er kendt for hendes pæne univers og hendes
+                oprigtighed hos sine følgere.
               </p>
               <p class="mb-4">
-                Hun er 30 år, mor til skønne Hamilton i alderen 2 år, og bor sammen med kæresten
-                Brizze i Jylland.
+                Hun er 30 år, mor til skønne Hamilton i alderen 2 år, og bor
+                sammen med kæresten Brizze i Jylland.
               </p>
               <p class="mb-4">
-                Dorthe deler ud af små og store hverdagesglimt med en troværdighed der skinner
-                igennem og en æstetisk sans for at skabe et smukt univers.
+                Dorthe deler ud af små og store hverdagesglimt med en
+                troværdighed der skinner igennem og en æstetisk sans for at
+                skabe et smukt univers.
               </p>
               <p class="mb-4">
-                Hun er en jordnær og livsglad kvinde, der deler ud af hverdagen og livet som mor,
-                livsstil og rejser og snart projekt byg nyt i 2023.
+                Hun er en jordnær og livsglad kvinde, der deler ud af hverdagen
+                og livet som mor, livsstil og rejser og snart projekt byg nyt i
+                2023.
               </p>
               Instagram:
               <a
@@ -239,29 +292,13 @@
             </div>
           </div>
         </article>
-        <article class="grid md:grid-cols-2 gap-8">
-          <div>
-            <img src="../src/images/sandra_stampe.jpg" alt="Sandra Stampe" class="rounded-2xl" />
-          </div>
-          <div>
-            <h2 class="text-4xl text-gray-900 mb-3 capitalize">Sandra Stampe</h2>
-            <div class="text-gray-500">
-              Instagram:
-              <a
-                class="text-blue-500"
-                href="https://instagram.com/sandrastampe?igshid=YmMyMTA2M2Y="
-                target="_blank"
-                rel="noopener noreferrer"
-                >@sandrastampe</a
-              >
-            </div>
-          </div>
-        </article>
       </div>
     </section>
 
     <!-- CTA -->
-    <section class="py-8 leading-7 text-gray-900 bg-white sm:py-12 md:py-16 lg:py-24">
+    <section
+      class="py-8 leading-7 text-gray-900 bg-white sm:py-12 md:py-16 lg:py-24"
+    >
       <div class="max-w-6xl px-10 mx-auto border-solid lg:px-12">
         <div
           class="flex flex-col items-start leading-7 text-gray-900 border-0 border-gray-200 lg:items-center lg:flex-row"
@@ -272,7 +309,9 @@
             >
               Har vi rette match til din næste kampagne?
             </h2>
-            <p class="mt-2 text-xl text-left text-gray-900 border-0 border-gray-200 sm:text-2xl">
+            <p
+              class="mt-2 text-xl text-left text-gray-900 border-0 border-gray-200 sm:text-2xl"
+            >
               Tøv ikke med at kontakte os.
             </p>
           </div>
@@ -296,23 +335,31 @@
                 <polyline points="12 5 19 12 12 19"></polyline>
               </svg>
             </a>
-            <p class="w-full text-sm text-center text-gray-500">Åbner din mail app. *</p>
+            <p class="w-full text-sm text-center text-gray-500">
+              Åbner din mail app. *
+            </p>
           </div>
         </div>
       </div>
     </section>
 
     <footer class="text-gray-700 bg-white body-font">
-      <div class="container flex flex-col items-center px-8 py-8 mx-auto max-w-7xl sm:flex-row">
-        <a href="/" class="text-xl font-bold leading-none text-gray-900 select-none"
-          >Insta Agency<span class="text-indigo-600">.</span></a
+      <div
+        class="container flex flex-col items-center px-8 py-8 mx-auto max-w-7xl sm:flex-row"
+      >
+        <a
+          href="/"
+          class="text-xl font-bold leading-none text-gray-900 select-none"
+          >Pili Agency<span class="text-indigo-600">.</span></a
         >
         <p
           class="mt-4 text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l sm:border-gray-200 sm:mt-0"
         >
-          © 2022 Insta Agency - Influencer Marketing.
+          © 2022 Pili Agency - Influencer Marketing.
         </p>
-        <span class="inline-flex justify-center mt-4 space-x-5 sm:ml-auto sm:mt-0 sm:justify-start">
+        <span
+          class="inline-flex justify-center mt-4 space-x-5 sm:ml-auto sm:mt-0 sm:justify-start"
+        >
           <a
             href="https://www.instagram.com/instaagency.dk/"
             class="text-gray-400 hover:text-gray-500 text-sm flex flex-wrap gap-2"
@@ -320,7 +367,12 @@
             rel="noopener noreferrer"
           >
             <span>Følg vores instagram</span>
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <svg
+              class="w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
               <path
                 fill-rule="evenodd"
                 d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"

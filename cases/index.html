@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="da" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./script.js" defer></script>
+    <script src="../src/navbar.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              beige: "#D2BD96",
+              beigehover: "#b7a585",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Influencere — Pili Agency</title>
+  </head>
+  <body>
+    <header class="px-8 text-gray-700 bg-white border-b">
+      <nav class="py-4 max-w-7xl mx-auto">
+        <div
+          class="container flex flex-wrap justify-between items-center mx-auto"
+        >
+          <a href="/" class="text-2xl font-semibold"
+            >Pili Agency<span class="text-beige">.</span></a
+          >
+          <button
+            id="menuButton"
+            data-collapse-toggle="navbar"
+            type="button"
+            class="md:hidden relative w-10 h-10"
+            aria-controls="navbar"
+            aria-expanded="false"
+          >
+            <span class="sr-only">open main menu</span>
+            <div class="menuButton-line1 inset-0 w-7 h-0.5 m-auto rounded-full bg-gray-600 transition-rotate duration-300"></div>
+            <div class="menuButton-line2 inset-0 w-7 h-0.5 mt-1.5 m-auto rounded-full bg-gray-600 transition-rotate duration-300"></div>
+          </button>
+          <div class="hidden w-full md:block md:w-auto transition-all duration-300 max-h-0 overflow-hidden md:max-h-full" id="navbar">
+            <ul
+              class="flex flex-col mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white uppercase"
+            >
+              <li>
+                <a
+                  href="/"
+                  class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-beige md:p-0"
+                  >Forside</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/cases"
+                  class="block py-2 pr-4 pl-3 text-white bg-beige rounded md:bg-transparent md:text-beige md:p-0"
+                  >Cases</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/influencere"
+                  class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-beige md:p-0"
+                  aria-current="page"
+                  >Influencere</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/#kontakt"
+                  class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-beige md:p-0"
+                  >Kontakt os</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+        <h1 class="text-4xl text-center my-64">Cases kommer snart.</h1>
+    </section>
+
+    <!-- CTA -->
+    <section
+      class="py-8 leading-7 text-gray-900 bg-white sm:py-12 md:py-16 lg:py-24"
+    >
+      <div class="max-w-6xl px-10 mx-auto border-solid lg:px-12">
+        <div
+          class="flex flex-col items-start leading-7 text-gray-900 border-0 border-gray-200 lg:items-center lg:flex-row"
+        >
+          <div class="box-border flex-1 text-center border-solid sm:text-left">
+            <h2
+              class="m-0 text-4xl font-semibold leading-tight tracking-tight text-left text-black border-0 border-gray-200 sm:text-5xl"
+            >
+                Klar til at komme i gang?
+            </h2>
+            <p
+              class="mt-2 text-xl text-left text-gray-900 border-0 border-gray-200 sm:text-2xl"
+            >
+              Tøv ikke med at kontakte os.
+            </p>
+          </div>
+          <div class="flex flex-col ml-0 lg:ml-6">
+            <a
+              href="mailto:postlydk@gmail.com"
+              class="inline-flex items-center justify-center w-full px-5 py-4 mt-6 font-sans text-base leading-none text-white no-underline bg-beige border border-beige border-solid cursor-pointer md:w-auto lg:mt-0 hover:bg-beigehover hover:border-beigehover hover:text-white focus-within:bg-beigehover focus-within:border-beigehover focus-within:text-white sm:text-lg md:text-xl rounded-lg"
+            >
+              Kontakt os
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5 ml-2"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <p class="w-full text-sm text-center text-gray-500">
+              Åbner din mail app. *
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-gray-700 bg-white body-font">
+      <div
+        class="container flex flex-col items-center px-8 py-8 mx-auto max-w-7xl sm:flex-row"
+      >
+        <a
+          href="/"
+          class="text-xl font-bold leading-none text-gray-900 select-none"
+          >Pili Agency<span class="text-indigo-600">.</span></a
+        >
+        <p
+          class="mt-4 text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l sm:border-gray-200 sm:mt-0"
+        >
+          © 2022 Pili Agency - Influencer Marketing.
+        </p>
+        <span
+          class="inline-flex justify-center mt-4 space-x-5 sm:ml-auto sm:mt-0 sm:justify-start"
+        >
+          <a
+            href="https://www.instagram.com/instaagency.dk/"
+            class="text-gray-400 hover:text-gray-500 text-sm flex flex-wrap gap-2"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>Følg vores instagram</span>
+            <svg
+              class="w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>
