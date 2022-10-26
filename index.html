@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./src/images/logo.jpg"/>
+    <link rel="icon" type="image/png" href="https://piliagency.com/src/images/logo.jpg"/>
     <script src="./src/navbar.js" defer></script>
+    <script src="./src/carousel.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -38,10 +41,17 @@
             aria-expanded="false"
           >
             <span class="sr-only">open main menu</span>
-            <div class="menuButton-line1 inset-0 w-7 h-0.5 m-auto rounded-full bg-gray-600 transition-rotate duration-300"></div>
-            <div class="menuButton-line2 inset-0 w-7 h-0.5 mt-1.5 m-auto rounded-full bg-gray-600 transition-rotate duration-300"></div>
+            <div
+              class="menuButton-line1 inset-0 w-7 h-0.5 m-auto rounded-full bg-gray-600 transition-rotate duration-300"
+            ></div>
+            <div
+              class="menuButton-line2 inset-0 w-7 h-0.5 mt-1.5 m-auto rounded-full bg-gray-600 transition-rotate duration-300"
+            ></div>
           </button>
-          <div class="hidden w-full md:block md:w-auto transition-all duration-300 max-h-0 overflow-hidden md:max-h-full" id="navbar">
+          <div
+            class="hidden w-full md:block md:w-auto transition-all duration-300 max-h-0 overflow-hidden md:max-h-full"
+            id="navbar"
+          >
             <ul
               class="flex flex-col mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white uppercase"
             >
@@ -81,7 +91,7 @@
     </header>
 
     <!-- Hero -->
-    <section class="px-2 pt-12 pb-24 sm:py-32 bg-white md:px-0">
+    <section class="px-2 pt-12 pb-24 bg-white md:px-0">
       <div class="container items-center max-w-6xl px-8 mx-auto xl:px-5">
         <div class="flex flex-wrap items-center sm:-mx-3">
           <div class="w-full md:w-1/2 md:px-3">
@@ -132,22 +142,23 @@
             </div>
           </div>
           <div class="w-full md:w-1/2">
-            <div class="w-full h-auto overflow-hidden shadow-xl rounded-lg">
-              <img src="./src/images/shaking-phone.gif" alt="hero" />
-            </div>
+            <img src="./src/images/hero.jpg" alt="hero" />
           </div>
         </div>
       </div>
     </section>
 
     <!-- Partners -->
-    <section class="bg-gray-100">
-      <div class="max-w-screen-xl px-4 pb-11 pt-8 mx-auto sm:px-6 lg:px-8">
-        <h2 class="text-xl text-center mb-4 text-gray-900">
+
+    <section class="bg-gray-100 shadow-xl">
+      <div class="overflow-hidden max-w-screen-xl mx-auto pt-6 pb-12">
+        <h2 class="text-xl text-center mb-6 text-gray-900">
           Samarbejdspartnere:
         </h2>
-        <div class="flex flex-wrap justify-center gap-8 sm:gap-20">
-          <div class="sm:flex-1">
+        <div
+          class="partner-images w-full flex transition-transform duration-700 translate-x-0"
+        >
+          <div class="partner-image w-1/2 md:w-1/4 shrink-0">
             <a
               href="https://www.nordicinfluencermarketing.com/"
               target="_blank"
@@ -157,11 +168,11 @@
               <img
                 src="./src/images/partner1.png"
                 alt="Nordic Influencer Marketing Logo"
-                class="max-h-10 contrast-0 mx-auto"
+                class="object-contain h-12 mx-auto contrast-0"
               />
             </a>
           </div>
-          <div class="sm:flex-1">
+          <div class="partner-image w-1/2 md:w-1/4 shrink-0">
             <a
               href="https://postly.dk/"
               target="_blank"
@@ -171,11 +182,11 @@
               <img
                 src="./src/images/partner2.png"
                 alt="Postly"
-                class="max-h-12 contrast-0 mx-auto"
+                class="object-contain h-12 mx-auto contrast-0"
               />
             </a>
           </div>
-          <div class="sm:flex-1">
+          <div class="partner-image w-1/2 md:w-1/4 shrink-0">
             <a
               href="https://taxhelper.dk/"
               target="_blank"
@@ -183,13 +194,13 @@
               title="TaxHelper"
             >
               <img
-                src="./src/images/partner3.svg"
+                src="./src/images/partner3.png"
                 alt="Tax Helper Logo"
-                class="max-h-12 contrast-0 mx-auto"
+                class="object-contain h-12 mx-auto contrast-0"
               />
             </a>
           </div>
-          <div class="sm:flex-1">
+          <div class="partner-image w-1/2 md:w-1/4 shrink-0">
             <a
               href="https://www.mom-me.dk/"
               target="_blank"
@@ -199,9 +210,86 @@
               <img
                 src="./src/images/partner4.png"
                 alt="MomMe Logo"
-                class="max-h-10 contrast-0 mx-auto"
+                class="object-contain h-12 mx-auto contrast-0"
               />
             </a>
+          </div>
+          <div class="partner-image w-1/2 md:w-1/4 shrink-0">
+            <img
+              src="./src/images/partner5.png"
+              alt="partner 5"
+              class="object-contain h-12 mx-auto contrast-0"
+            />
+          </div>
+          <div class="partner-image w-1/2 md:w-1/4 shrink-0">
+            <img
+              src="./src/images/partner6.png"
+              alt="partner 6"
+              class="object-contain h-12 mx-auto contrast-0"
+            />
+          </div>
+          <div class="partner-image w-1/2 md:w-1/4 shrink-0">
+            <img
+              src="./src/images/partner7.png"
+              alt="partner 7"
+              class="object-contain h-12 mx-auto contrast-0"
+            />
+          </div>
+          <div class="partner-image w-1/2 md:w-1/4 shrink-0">
+            <img
+              src="./src/images/partner8.png"
+              alt="partner 8"
+              class="object-contain h-12 mx-auto contrast-0"
+            />
+          </div>
+          <div class="partner-image w-1/2 md:w-1/4 shrink-0">
+            <img
+              src="./src/images/partner9.png"
+              alt="partner 9"
+              class="object-contain h-12 mx-auto contrast-0"
+            />
+          </div>
+          <div class="partner-image w-1/2 md:w-1/4 shrink-0">
+            <img
+              src="./src/images/partner10.png"
+              alt="partner 10"
+              class="object-contain h-12 mx-auto contrast-0"
+            />
+          </div>
+          <div class="partner-image w-1/2 md:w-1/4 shrink-0">
+            <img
+              src="./src/images/partner11.png"
+              alt="partner 11"
+              class="object-contain h-12 mx-auto contrast-0"
+            />
+          </div>
+          <div class="partner-image w-1/2 md:w-1/4 shrink-0">
+            <img
+              src="./src/images/partner12.png"
+              alt="partner 12"
+              class="object-contain h-12 mx-auto contrast-0"
+            />
+          </div>
+          <div class="partner-image w-1/2 md:w-1/4 shrink-0">
+            <img
+              src="./src/images/partner13.png"
+              alt="partner 13"
+              class="object-contain h-12 mx-auto contrast-0"
+            />
+          </div>
+          <div class="partner-image w-1/2 md:w-1/4 shrink-0">
+            <img
+              src="./src/images/partner14.png"
+              alt="partner 14"
+              class="object-contain h-12 mx-auto contrast-0"
+            />
+          </div>
+          <div class="partner-image w-1/2 md:w-1/4 shrink-0">
+            <img
+              src="./src/images/partner15.png"
+              alt="partner 15"
+              class="object-contain h-12 mx-auto contrast-0"
+            />
           </div>
         </div>
       </div>
@@ -234,7 +322,7 @@
           <div class="w-full px-3 mb-12 lg:w-1/2 order-0 lg:order-1 lg:mb-0">
             <img
               class="mx-auto sm:max-w-sm lg:max-w-full"
-              src="./src/images/influencer-gif.gif"
+              src="./src/images/person_skrivebord.jpg"
               alt="feature image"
             />
           </div>
@@ -260,7 +348,7 @@
           </p>
         </div>
         <div>
-          <img src="./src/images/marketing1.png" alt="" class="rounded-2xl" />
+          <img src="./src/images/marketing2.jpg" alt="" class="rounded-2xl" />
         </div>
         <div class="md:col-start-2 md:row-start-2">
           <h2 class="text-2xl font-semibold text-gray-900 mb-3">
@@ -273,7 +361,7 @@
           </p>
         </div>
         <div>
-          <img src="./src/images/marketing2.jpg" alt="" class="rounded-2xl" />
+          <img src="./src/images/screens.jpg" alt="" class="rounded-2xl" />
         </div>
         <div>
           <h2 class="text-2xl font-semibold text-gray-900 mb-3">
