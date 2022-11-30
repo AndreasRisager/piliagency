@@ -18,7 +18,7 @@ export default function cases() {
           klarede sig.
         </p>
       </div>
-      <section className="max-w-7xl mx-auto px-4 sm:grid grid-cols-3 gap-5 my-32">
+      <section className="max-w-7xl mx-auto px-4 grid sm:grid-cols-3 gap-5 my-32">
         <CaseCard />
         <CaseCard />
         <CaseCard />

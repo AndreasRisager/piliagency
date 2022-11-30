@@ -12,19 +12,19 @@ export default function Posterstore() {
         <title>Posterstore Case — Pili Agency</title>
       </Head>
       <div className="max-w-7xl mx-auto px-4">
-        <div className="grid items-center">
+        <div className="grid items-center -mx-4">
           <Image
             src="/posterstore-case.avif"
             width="1248"
             height="624"
             alt="plakater"
-            className="col-span-full row-span-full"
+            className="col-span-full row-span-full min-h-[250px] object-cover"
             priority
           />
         </div>
-        <div className="max-w-3xl mx-auto my-32">
-          <h1 className="text-4xl md:text-6xl font-serif mb-4 text-center">Poster Store</h1>
-          <p className="text-xl leading-relaxed text-start sm:text-center">
+        <div className="max-w-3xl mx-auto my-32 text-center">
+          <h1 className="text-4xl md:text-6xl font-serif mb-4">Poster Store</h1>
+          <p className="text-xl leading-relaxed">
             På Poster Store finder du skandinaviske designplakater skabt med glæde og passion for
             kunstnere fra hele verden. De tilbyder også stilfulde højkvalitetsrammer, som er nemme
             at håndtere og holder op på væggen.

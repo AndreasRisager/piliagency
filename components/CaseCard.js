@@ -7,8 +7,8 @@ export default function CaseCard() {
       <span className="sr-only">Poster Store Case</span>
       <Link href="/cases/posterstore" className="grid items-center">
         <Image
-          width="403"
-          height="202"
+          width="603"
+          height="300"
           src="/posterstore-case.avif"
           alt="poster store case"
           className="col-span-full row-span-full"
