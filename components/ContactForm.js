@@ -20,23 +20,26 @@ export default function ContactForm() {
               name="kontakt"
               id="contact"
               className="relative z-10 h-auto py-10 px-4 sm:px-7 overflow-hidden bg-white border-b-2 border-gray-300 shadow-2xl sm:rounded-lg -mx-4 sm:mx-0">
-              <input type="hidden" name="subject" value="Formularindsendelse - Insta Agency." />
+              <input type="hidden" name="subject" value="Formularindsendelse - Pili Agency." />
               <input
                 type="text"
                 name="name"
                 className="block w-full px-4 py-3 mb-4 border-2 border-transparent border-gray-200 focus:ring focus:ring-beige focus:outline-none rounded-lg"
                 placeholder="Fulde navn"
+                required
               />
               <input
                 type="email"
                 name="email"
                 className="block w-full px-4 py-3 mb-4 border-2 border-transparent border-gray-200 focus:ring focus:ring-beige focus:outline-none rounded-lg"
                 placeholder="Email address"
+                required
               />
               <textarea
                 name="message"
                 className="block w-full px-4 py-3 mb-4 border-2 border-transparent border-gray-200 focus:ring focus:ring-beige focus:outline-none rounded-lg"
-                placeholder="Besked"></textarea>
+                placeholder="Besked"
+                required></textarea>
               <button className="w-full px-3 py-4 font-medium text-white bg-beige hover:bg-beigehover focus:bg-beigehover rounded-lg">
                 Send
               </button>
