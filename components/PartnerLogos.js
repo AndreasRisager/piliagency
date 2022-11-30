@@ -1,7 +1,7 @@
 import Image from "next/image";
 import SliderContainer, { SliderItem } from "./Slider";
 
-export const PartnerLogos = ({ images }) => {
+export const PartnerLogos = ({ images = [] }) => {
   const halfOfImages = Math.ceil(images.length / 2);
   return (
     <>

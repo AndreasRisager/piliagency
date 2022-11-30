@@ -3,13 +3,13 @@ import Image from "next/image";
 import CaseIcon from "../../components/CaseIcon";
 import Layout from "../../components/Layout";
 
-export default function Posterstore() {
+export default function posterstore() {
   return (
     <Layout>
       <Head>
         <link rel="icon" type="image/jpg" href="/logo.jpg" />
         <link rel="icon" type="image/jpg" href="https://piliagency.com/logo.jpg" />
-        <title>Posterstore Case — Pili Agency</title>
+        <title>Poster Store Case — Pili Agency</title>
       </Head>
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid items-center -mx-4">
@@ -18,7 +18,7 @@ export default function Posterstore() {
             width="1248"
             height="624"
             alt="plakater"
-            className="col-span-full row-span-full min-h-[250px] object-cover"
+            className="col-span-full row-span-full min-h-[250px] w-auto object-cover"
             priority
           />
         </div>

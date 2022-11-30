@@ -44,6 +44,7 @@ export default function creators() {
                 link: "https://www.instagram.com/annadavidmusic/",
               },
             ]}
+            priority={true}
           />
           <Creator
             name="Mette Sommer"

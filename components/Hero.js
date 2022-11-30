@@ -6,14 +6,7 @@ export default function Hero() {
       <div className="flex flex-col lg:flex-row lg:items-stretch lg:min-h-[800px] max-w-7xl mx-auto">
         <div className="relative flex items-center justify-center w-full lg:order-2 lg:w-1/2">
           <div className="ml-4 absolute bottom-0 right-0 hidden lg:block">
-            <Image
-              width="586"
-              height="192"
-              className="object-contain w-auto h-48"
-              src="/curved-lines.png"
-              alt="curved lines"
-              priority
-            />
+            <Image width="586" height="192" src="/curved-lines.png" alt="curved lines" priority />
           </div>
 
           <div className="relative px-4 pt-5 sm:pt-12 md:pt-24 pb-16 sm:text-center sm:px-6 md:px-24 2xl:px-32 lg:py-24 lg:text-left">
@@ -32,9 +25,9 @@ export default function Hero() {
             <Image
               width="128"
               height="128"
-              className="w-32 h-32 md:w-32 md:h-32"
               src="/curved-text.png"
               alt="Få succes med influencer marketing"
+              priority
             />
           </div>
         </div>
@@ -47,6 +40,7 @@ export default function Hero() {
               className="object-cover w-full h-full scale-125"
               src="/hero.jpg"
               alt="hero"
+              priority
             />
           </div>
         </div>

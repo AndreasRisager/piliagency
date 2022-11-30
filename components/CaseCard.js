@@ -12,6 +12,7 @@ export default function CaseCard() {
           src="/posterstore-case.avif"
           alt="poster store case"
           className="col-span-full row-span-full"
+          priority
         />
       </Link>
     </div>
