@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Features() {
   return (
     <section className="px-4 max-w-7xl mx-auto py-20">
@@ -14,7 +16,13 @@ export default function Features() {
           </p>
         </div>
         <div>
-          <img src="/marketing2.jpg" alt="likes på post" className="rounded-2xl shadow-lg" />
+          <Image
+            height="479"
+            width="718"
+            src="/marketing2.jpg"
+            alt="likes på post"
+            className="rounded-2xl shadow-lg"
+          />
         </div>
         <div className="md:col-start-2 md:row-start-2 md:pr-4">
           <h2 className="text-2xl lg:text-3xl font-semibold text-gray-900 mb-3">
@@ -26,7 +34,13 @@ export default function Features() {
           </p>
         </div>
         <div>
-          <img src="/screens.jpg" alt="skærme med data" className="rounded-2xl shadow-lg" />
+          <Image
+            height="479"
+            width="718"
+            src="/screens.jpg"
+            alt="skærme med data"
+            className="rounded-2xl shadow-lg"
+          />
         </div>
         <div className="md:pl-4">
           <h2 className="text-2xl lg:text-3xl font-semibold text-gray-900 mb-3">
@@ -42,7 +56,13 @@ export default function Features() {
           </p>
         </div>
         <div>
-          <img src="/marketing3.jpg" alt="instagram profil" className="rounded-2xl shadow-lg" />
+          <Image
+            height="479"
+            width="718"
+            src="/marketing3.jpg"
+            alt="instagram profil"
+            className="rounded-2xl shadow-lg"
+          />
         </div>
       </div>
     </section>

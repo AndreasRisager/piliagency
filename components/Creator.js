@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Creator({ name, image, tags = [], texts, lines, socials = [] }) {
   const [readMore, setReadMore] = useState(false);
@@ -6,7 +7,7 @@ export default function Creator({ name, image, tags = [], texts, lines, socials 
   return (
     <article className="grid md:grid-cols-2 gap-8">
       <div>
-        <img src={image} alt={name} className="rounded-2xl" />
+        <Image width="500" height="500" src={image} alt={name} className="rounded-2xl" />
       </div>
       <div>
         <h2 className="text-4xl text-gray-900 capitalize">{name}</h2>
