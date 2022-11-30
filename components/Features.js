@@ -35,7 +35,7 @@ export default function Features() {
         </div>
         <div>
           <Image
-            height="479"
+            height="513"
             width="718"
             src="/screens.jpg"
             alt="skærme med data"
