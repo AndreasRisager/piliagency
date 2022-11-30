@@ -18,7 +18,7 @@ export default function posterstore() {
             width="1248"
             height="624"
             alt="plakater"
-            className="col-span-full row-span-full min-h-[250px] w-auto object-cover"
+            className="col-span-full row-span-full min-h-[250px] w-full object-cover"
             priority
           />
         </div>
