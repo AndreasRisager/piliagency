@@ -35,12 +35,12 @@ export default function AboutUs() {
             Vi har over 5 års erfaring med influencer marketing og kommunikation.
           </p>
           <p
-            className="transition-opacity duration-500 inline-block my-4"
+            className="transition-opacity duration-500 my-4"
             style={{ opacity: opacityForBlock(progress, 1) }}>
             Med vores erfaring og flere år i branchen har vi et solidt netværk i branchen.
           </p>
           <p
-            className="transition-opacity duration-500 inline-block"
+            className="transition-opacity duration-500"
             style={{ opacity: opacityForBlock(progress, 2) }}>
             Vores udvalg af dygtige og kreative influenter sikrer, at dit budskab når frem til netop
             jeres målgrupper.
