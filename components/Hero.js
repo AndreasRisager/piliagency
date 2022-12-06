@@ -9,7 +9,7 @@ export default function Hero() {
             <Image width="586" height="192" src="/curved-lines.png" alt="curved lines" priority />
           </div>
 
-          <div className="relative px-4 pt-5 sm:pt-12 md:pt-24 pb-16 sm:text-center sm:px-6 md:px-24 2xl:px-32 lg:py-24 lg:text-left">
+          <div className="relative px-4 pt-5 sm:pt-12 md:pt-24 pb-16 sm:text-center sm:px-6 md:px-24 2xl:px-32 lg:py-24 lg:text-left z-20">
             <h1 className="text-4xl font-bold text-black sm:text-5xl xl:text-7xl font-serif">
               Digital Markedsføring
               <br />

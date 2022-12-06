@@ -9,6 +9,10 @@ export default function posterstore() {
       <Head>
         <link rel="icon" type="image/jpg" href="/logo.jpg" />
         <link rel="icon" type="image/jpg" href="https://piliagency.com/logo.jpg" />
+        <meta
+          name="description"
+          content="Digital Markedsføring der skaber performance! - Vi skaber succesfulde influencer marketing kampagner ved at forbinde influencers og brands"
+        />
         <title>Poster Store Case — Pili Agency</title>
       </Head>
       <div className="max-w-7xl mx-auto px-4">
