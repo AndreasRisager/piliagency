@@ -19,11 +19,11 @@ export default function Home() {
         />
         <title>Pili Agency</title>
       </Head>
-      {/* <Hero /> */}
+      <Hero />
       <Partners />
       <AboutUs />
       <Features />
-      <ContactForm />
+      {/* <ContactForm /> */}
       <CTA />
     </Layout>
   );
