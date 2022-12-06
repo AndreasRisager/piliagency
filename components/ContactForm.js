@@ -19,8 +19,13 @@ export default function ContactForm() {
               data-netlify="true"
               name="kontakt"
               id="contact"
-              className="relative z-10 h-auto py-10 px-4 sm:px-7 overflow-hidden bg-white border-b-2 border-gray-300 shadow-2xl sm:rounded-lg -mx-4 sm:mx-0">
-              <input type="hidden" name="subject" value="Formularindsendelse - Pili Agency." />
+              className="py-10 px-4 sm:px-7 bg-white shadow-2xl rounded-lg -mx-2 sm:mx-0">
+              <input
+                type="hidden"
+                name="subject"
+                value="Formularindsendelse - Pili Agency."
+                className="hidden"
+              />
               <input
                 type="text"
                 name="name"
@@ -40,7 +45,9 @@ export default function ContactForm() {
                 className="block w-full px-4 py-3 mb-4 border-2 border-gray-200 focus:ring focus:ring-beige focus:outline-none rounded-lg"
                 placeholder="Besked"
                 required></textarea>
-              <button className="w-full px-3 py-4 font-medium text-white bg-beige hover:bg-beigehover focus:bg-beigehover rounded-lg">
+              <button
+                className="block w-full px-3 py-4 font-medium text-white bg-beige hover:bg-beigehover focus:bg-beigehover focus:ring focus:ring-gray-900 focus:outline-none rounded-lg"
+                type="submit">
                 Send
               </button>
             </form>

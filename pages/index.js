@@ -23,7 +23,7 @@ export default function Home() {
       <Partners />
       <AboutUs />
       <Features />
-      {/* <ContactForm /> */}
+      <ContactForm />
       <CTA />
     </Layout>
   );
