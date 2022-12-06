@@ -12,12 +12,12 @@ export default function posterstore() {
         <title>Poster Store Case — Pili Agency</title>
       </Head>
       <div className="max-w-7xl mx-auto px-4">
-        <div className="grid items-center -mx-4">
+        <div className="-mx-4">
           <Image
             src="/posterstore-case.avif"
-            width="1248"
-            height="624"
-            alt="plakater"
+            width="1280"
+            height="631"
+            alt="poster store plakater"
             className="col-span-full row-span-full min-h-[250px] w-full object-cover"
             priority
           />
