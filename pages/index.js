@@ -16,7 +16,7 @@ export default function Home() {
         <title>Pili Agency</title>
       </Head>
       <Hero />
-      <Partners />
+      {/* <Partners /> */}
       <AboutUs />
       <Features />
       <ContactForm />
