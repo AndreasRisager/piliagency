@@ -1,11 +1,14 @@
 import Head from "next/head";
 import AboutUs from "../components/AboutUs";
-import ContactForm from "../components/ContactForm";
 import CTA from "../components/CTA";
 import Features from "../components/Features";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout";
 import Partners from "../components/Partners";
+import dynamic from "next/dynamic";
+const ContactForm = dynamic(() => import("../components/ContactForm"), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
