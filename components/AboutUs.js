@@ -15,7 +15,7 @@ export default function AboutUs() {
   let progress = 0;
 
   const { current: elContainer } = refContainer;
-  if (elContainer && typeof window !== "undefined") {
+  if (elContainer) {
     const { clientHeight, offsetTop } = elContainer;
     const screenH = window.innerHeight;
     const halfH = screenH / 2;

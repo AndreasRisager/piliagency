@@ -9,9 +9,9 @@ const ScrollObserver = ({ children }) => {
   }, []);
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll, { passive: true });
+    document.addEventListener("scroll", handleScroll, { passive: true });
 
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => document.removeEventListener("scroll", handleScroll);
   }, [handleScroll]);
 
   return <ScrollContext.Provider value={{ scrollY }}>{children}</ScrollContext.Provider>;
