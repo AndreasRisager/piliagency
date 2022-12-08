@@ -18,7 +18,7 @@ export default function kontakt() {
       </Head>
 
       <main className="flex-grow max-w-7xl mx-auto px-4 grid md:grid-cols-2 items-center">
-        <div className="md:order-1 my-10 md:ml-10">
+        <div className="md:order-1 my-10 md:my-56 md:ml-10">
           <div className="mb-10 md:my-4 text-center lg:mb-14">
             <h1 className="text-6xl font-serif mb-4">Kontakt os</h1>
             <p className="text-xl leading-relaxed">
