@@ -24,8 +24,10 @@ export default function Home() {
       </Head>
       <Hero />
       <Partners />
-      <AboutUs />
-      <Features />
+      <main>
+        <AboutUs />
+        <Features />
+      </main>
       <ContactForm />
       <CTA />
     </Layout>

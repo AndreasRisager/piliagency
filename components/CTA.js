@@ -1,4 +1,6 @@
-export default function CTA({ heading, subheading }) {
+import Link from "next/link";
+
+export default function CTA({ heading, subheading, link, linkname }) {
   return (
     <section className="py-8 text-gray-900 bg-white sm:py-12 md:py-16 lg:py-24">
       <div className="max-w-6xl px-6 sm:px-8 mx-auto border-solid">
@@ -12,10 +14,10 @@ export default function CTA({ heading, subheading }) {
             </p>
           </div>
           <div className="flex flex-col">
-            <a
-              href="mailto:ka@piliagency.com"
+            <Link
+              href={link || "/kontakt"}
               className="inline-flex items-center justify-center w-full px-5 py-4 mt-6 font-sans text-base leading-none text-white no-underline bg-beige border border-beige border-solid cursor-pointer md:w-auto lg:mt-0 hover:bg-beigehover hover:border-beigehover hover:text-white focus-within:bg-beigehover focus-within:border-beigehover focus-within:text-white sm:text-lg md:text-xl rounded-lg">
-              Kontakt os
+              {linkname || "Kontakt os"}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-5 h-5 ml-2"
@@ -28,8 +30,7 @@ export default function CTA({ heading, subheading }) {
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
               </svg>
-            </a>
-            <p className="w-full text-sm text-center text-gray-500">Åbner din mail app. *</p>
+            </Link>
           </div>
         </div>
       </div>

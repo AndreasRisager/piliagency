@@ -12,6 +12,12 @@ module.exports = {
         beigehover: "hsl(36, 31%, 73%)",
         darkpurple: "#373a58",
       },
+      height: {
+        innerheight: "calc(100vh - 73px)",
+      },
+      gridTemplateColumns: {
+        "case-card": "repeat(auto-fit, 403px)",
+      },
     },
   },
   plugins: [],

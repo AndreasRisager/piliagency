@@ -3,10 +3,10 @@ import SiteHeader from "./SiteHeader";
 
 export default function Layout({ children }) {
   return (
-    <>
+    <div className="min-h-screen flex flex-col justify-between">
       <SiteHeader />
-      <main className="header-height">{children}</main>
+      {children}
       <SiteFooter />
-    </>
+    </div>
   );
 }

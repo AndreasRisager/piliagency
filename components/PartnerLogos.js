@@ -26,7 +26,6 @@ export const PartnerLogos = ({ images = [] }) => {
               alt={image.alt || "partner"}
               fill={true}
               style={{ objectFit: "contain" }}
-              sizes={image.width || 150}
             />
           </SliderItem>
         ))}

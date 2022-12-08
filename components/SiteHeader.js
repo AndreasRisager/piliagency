@@ -7,7 +7,7 @@ export default function SiteHeader() {
   const pathname = usePathname();
 
   return (
-    <header className="text-gray-700 bg-white border-b fixed top-0 w-full z-50 shadow-sm supports-[backdrop-filter]:bg-white/90 supports-[backdrop-filter]:backdrop-blur-sm">
+    <header className="text-gray-700 bg-white border-b sticky top-0 w-full z-50 shadow-sm supports-[backdrop-filter]:bg-white/90 supports-[backdrop-filter]:backdrop-blur-sm">
       <nav className="p-4 max-w-7xl mx-auto">
         <div className="flex flex-wrap justify-between items-center">
           <Link href="/" className="text-2xl font-semibold">
@@ -18,7 +18,7 @@ export default function SiteHeader() {
             id="menuButton"
             data-collapse-toggle="navbar"
             type="button"
-            className="md:hidden relative w-8 h-8"
+            className="md:hidden relative w-10 h-10"
             aria-controls="navbar"
             aria-expanded="false">
             <span className="sr-only">open main menu</span>
@@ -72,7 +72,7 @@ export default function SiteHeader() {
               </li>
               <li>
                 <Link
-                  href="/#kontakt"
+                  href="/kontakt"
                   className="block text-gray-700 py-2 pr-4 pl-3 rounded hover:bg-gray-100 md:text-white md:mr-0 md:py-2.5 md:px-5 md:rounded-lg md:bg-beige md:hover:bg-beigehover md:active:bg-beigehover focus:outline-none focus:ring focus:ring-black">
                   Kontakt os
                 </Link>
