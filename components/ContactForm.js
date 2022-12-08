@@ -1,6 +1,4 @@
 export default function ContactForm({ name = "kontakt", className }) {
-  if (typeof window === "undefined") return;
-
   return (
     <form
       method="POST"
@@ -9,6 +7,7 @@ export default function ContactForm({ name = "kontakt", className }) {
       name={name}
       id="contact"
       className={className}>
+      <input type="hidden" name="form-name" value={name} />
       <input
         type="hidden"
         name="subject"
