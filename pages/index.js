@@ -5,10 +5,7 @@ import Features from "../components/Features";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout";
 import Partners from "../components/Partners";
-import dynamic from "next/dynamic";
-const ContactForm = dynamic(() => import("../components/ContactForm"), {
-  ssr: false,
-});
+import ContactSection from "../components/ContactSection";
 
 export default function Home() {
   return (
@@ -28,7 +25,7 @@ export default function Home() {
         <AboutUs />
         <Features />
       </main>
-      <ContactForm />
+      <ContactSection />
       <CTA />
     </Layout>
   );
