@@ -1,9 +1,12 @@
-export default function ContactForm({ name, className }) {
+export default function ContactForm({ name = "kontakt", className }) {
+  if (typeof window === "undefined") return;
+
   return (
     <form
       method="POST"
       data-netlify="true"
-      name={name || "kontakt"}
+      action="/succes"
+      name={name}
       id="contact"
       className={className}>
       <input

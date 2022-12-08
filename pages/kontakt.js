@@ -1,11 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
+import ContactForm from "../components/ContactForm";
 import CTA from "../components/CTA";
 import Layout from "../components/Layout";
-import dynamic from "next/dynamic";
-const ContactForm = dynamic(() => import("../components/ContactForm"), {
-  ssr: false,
-});
 
 export default function kontakt() {
   return (
@@ -29,7 +26,7 @@ export default function kontakt() {
               kontakt os venligst her.
             </p>
           </div>
-          <ContactForm name="kontakt" />
+          <ContactForm />
         </div>
         <div className="hidden md:block min-h-full relative -mx-4">
           <Image

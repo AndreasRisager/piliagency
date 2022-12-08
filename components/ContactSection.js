@@ -1,7 +1,4 @@
-import dynamic from "next/dynamic";
-const ContactForm = dynamic(() => import("../components/ContactForm"), {
-  ssr: false,
-});
+import ContactForm from "./ContactForm";
 
 export default function ContactSection() {
   return (
