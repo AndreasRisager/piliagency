@@ -3,7 +3,7 @@ import Image from "next/image";
 import CaseIcon from "../../components/CaseIcon";
 import CTA from "../../components/CTA";
 import Layout from "../../components/Layout";
-import heroImage from "../../public/posterstore.avif";
+import heroImage from "../../public/posterstore.webp";
 
 export default function posterstore() {
   return (

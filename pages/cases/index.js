@@ -6,13 +6,13 @@ import Layout from "../../components/Layout";
 const caseItems = [
   {
     name: "Poster Case",
-    image: "/posterstore.avif",
+    image: "/posterstore.webp",
     logo: "/partners/partner9.png",
     link: "/cases/posterstore",
   },
   {
     name: "Poster Case",
-    image: "/posterstore.avif",
+    image: "/posterstore.webp",
     logo: "/partners/partner9.png",
     link: "/cases/posterstore",
   },
