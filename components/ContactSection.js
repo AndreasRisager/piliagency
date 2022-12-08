@@ -16,10 +16,7 @@ export default function ContactSection() {
           </div>
 
           <div className="w-full mt-16 md:mt-0 lg:w-2/5">
-            <ContactForm
-              name="kontakt - startside"
-              className="py-10 px-4 sm:px-7 bg-white shadow-2xl rounded-lg -mx-2 sm:mx-0"
-            />
+            <ContactForm className="py-10 px-4 sm:px-7 bg-white shadow-2xl rounded-lg -mx-2 sm:mx-0" />
           </div>
         </div>
       </div>
