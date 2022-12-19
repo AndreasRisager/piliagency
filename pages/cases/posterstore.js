@@ -6,7 +6,7 @@ import heroImage from "../../public/posterstore.webp";
 
 export default function posterstore() {
   return (
-    <Layout title="Poster Store">
+    <Layout title="Poster Store" image={heroImage}>
       <div className="h-innerheight grid relative">
         <Image
           src={heroImage}

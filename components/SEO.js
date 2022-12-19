@@ -6,7 +6,7 @@ export default function SEO({
   title,
   description = "Digital Markedsføring der skaber performance! - Vi skaber succesfulde influencer marketing kampagner ved at forbinde influencers og brands",
   keywords = "influencer, influencer marketing, marketing, influency marketing agency, agency, influencer agency, digital markedsføring, markedsføring, brands, kampagner, influencer kampagner",
-  image = logo,
+  image,
 }) {
   const router = useRouter();
 
@@ -28,14 +28,14 @@ export default function SEO({
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title ? `${title} — Pili Agency` : "Pili Agency"} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={image} />
+      <meta property="og:image" content={image || logo} />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta property="twitter:domain" content="https://piliagency.com/" />
       <meta property="twitter:url" content={`https://piliagency.com${router.pathname}`} />
       <meta name="twitter:title" content={title ? `${title} — Pili Agency` : "Pili Agency"} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={image} />
+      <meta name="twitter:image" content={image || logo} />
     </Head>
   );
 }
