@@ -4,6 +4,7 @@ import SizeObserver from "../utils/size-observer";
 import Script from "next/script";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
+import * as gtag from "../utils/gtag";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
