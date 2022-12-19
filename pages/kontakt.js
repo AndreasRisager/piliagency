@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Image from "next/image";
 import ContactForm from "../components/ContactForm";
 import CTA from "../components/CTA";
@@ -6,17 +5,7 @@ import Layout from "../components/Layout";
 
 export default function kontakt() {
   return (
-    <Layout>
-      <Head>
-        <link rel="icon" type="image/jpg" href="/logo.jpg" />
-        <link rel="icon" type="image/jpg" href="https://piliagency.com/logo.jpg" />
-        <meta
-          name="description"
-          content="Digital Markedsføring der skaber performance! - Vi skaber succesfulde influencer marketing kampagner ved at forbinde influencers og brands"
-        />
-        <title>Kontakt - Pili Agency</title>
-      </Head>
-
+    <Layout title="Kontakt">
       <main className="flex-grow max-w-7xl mx-auto px-4 grid md:grid-cols-2 items-center">
         <div className="md:order-1 my-10 md:my-56 md:ml-10">
           <div className="mb-10 md:my-4 text-center lg:mb-14">

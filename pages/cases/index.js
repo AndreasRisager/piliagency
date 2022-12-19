@@ -1,4 +1,3 @@
-import Head from "next/head";
 import CaseCard from "../../components/CaseCard";
 import CTA from "../../components/CTA";
 import Layout from "../../components/Layout";
@@ -20,16 +19,7 @@ const caseItems = [
 
 export default function cases() {
   return (
-    <Layout>
-      <Head>
-        <link rel="icon" type="image/jpg" href="/logo.jpg" />
-        <link rel="icon" type="image/jpg" href="https://piliagency.com/logo.jpg" />
-        <meta
-          name="description"
-          content="Digital Markedsføring der skaber performance! - Vi skaber succesfulde influencer marketing kampagner ved at forbinde influencers og brands"
-        />
-        <title>Cases — Pili Agency</title>
-      </Head>
+    <Layout title="Cases">
       <main>
         <div className="max-w-3xl mx-auto px-4 my-32 text-center">
           <h1 className="text-6xl font-serif mb-4">Cases</h1>

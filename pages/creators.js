@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Creator from "../components/Creator";
 import CTA from "../components/CTA";
 import Layout from "../components/Layout";
@@ -156,16 +155,7 @@ const creatorItems = [
 
 export default function creators() {
   return (
-    <Layout>
-      <Head>
-        <link rel="icon" type="image/jpg" href="/logo.jpg" />
-        <link rel="icon" type="image/jpg" href="https://piliagency.com/logo.jpg" />
-        <meta
-          name="description"
-          content="Digital Markedsføring der skaber performance! - Vi skaber succesfulde influencer marketing kampagner ved at forbinde influencers og brands"
-        />
-        <title>Creators — Pili Agency</title>
-      </Head>
+    <Layout title="Creators">
       <main className="pb-20">
         <div className="container max-w-6xl px-8 py-24 mx-auto xl:px-5">
           <h1 className="text-4xl font-serif font-extrabold mb-4 tracking-tight text-gray-900 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl">

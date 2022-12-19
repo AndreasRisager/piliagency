@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 
 export default function succes() {
   return (
-    <Layout>
+    <Layout title="Tak!">
       <main className="text-center">
         <h1 className="text-xl md:text-3xl mb-4">Tak vi har modtaget din besked!</h1>
         <Link

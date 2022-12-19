@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Image from "next/image";
 import CaseIcon from "../../components/CaseIcon";
 import CTA from "../../components/CTA";
@@ -7,16 +6,7 @@ import heroImage from "../../public/posterstore.webp";
 
 export default function posterstore() {
   return (
-    <Layout>
-      <Head>
-        <link rel="icon" type="image/jpg" href="/logo.jpg" />
-        <link rel="icon" type="image/jpg" href="https://piliagency.com/logo.jpg" />
-        <meta
-          name="description"
-          content="Digital Markedsføring der skaber performance! - Vi skaber succesfulde influencer marketing kampagner ved at forbinde influencers og brands"
-        />
-        <title>Poster Store — Pili Agency</title>
-      </Head>
+    <Layout title="Poster Store">
       <div className="h-innerheight grid relative">
         <Image
           src={heroImage}
