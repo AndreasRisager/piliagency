@@ -1,11 +1,12 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
+import logo from "../public/logo.jpg";
 
 export default function SEO({
-  title = "",
+  title,
   description = "Digital Markedsføring der skaber performance! - Vi skaber succesfulde influencer marketing kampagner ved at forbinde influencers og brands",
   keywords = "influencer, influencer marketing, marketing, influency marketing agency, agency, influencer agency, digital markedsføring, markedsføring, brands, kampagner, influencer kampagner",
-  image = "",
+  image = logo,
 }) {
   const router = useRouter();
 
