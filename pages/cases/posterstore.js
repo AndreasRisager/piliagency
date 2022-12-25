@@ -21,8 +21,8 @@ export default function posterstore() {
             <Image
               width="180"
               height="180"
-              src="/partners/partner9.png"
-              alt="poster store case"
+              src="/partners/poster-store-logo.png"
+              alt="poster store logo"
               className="brightness-0 invert mx-auto"
               priority
             />

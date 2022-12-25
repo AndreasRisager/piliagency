@@ -6,13 +6,13 @@ const caseItems = [
   {
     name: "Poster Case",
     image: "/posterstore.webp",
-    logo: "/partners/partner9.png",
+    logo: "/partners/poster-store-logo.png",
     link: "/cases/posterstore",
   },
   {
     name: "Poster Case",
     image: "/posterstore.webp",
-    logo: "/partners/partner9.png",
+    logo: "/partners/poster-store-logo.png",
     link: "/cases/posterstore",
   },
 ];

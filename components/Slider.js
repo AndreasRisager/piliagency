@@ -1,4 +1,4 @@
-import { useCallback, useContext, useRef } from "react";
+import { useCallback, useContext, useRef, useState } from "react";
 import { SizeContext } from "../utils/size-observer";
 import useAnimationFrame from "../utils/use-animation-frame";
 
@@ -7,6 +7,7 @@ const SliderContainer = ({ children, initialOffsetX, contentWidth, className }) 
   const refScrollX = useRef(initialOffsetX);
   const refContainer = useRef(null);
   const refContent = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(true);
   const enabled = innerWidth < contentWidth;
 
   useAnimationFrame(
@@ -14,7 +15,7 @@ const SliderContainer = ({ children, initialOffsetX, contentWidth, className }) 
     useCallback(() => {
       const { current: elContainer } = refContainer;
       const { current: elContent } = refContent;
-      if (elContainer && elContent) {
+      if (elContainer && elContent && isPlaying) {
         refScrollX.current += 0.5;
         elContainer.scrollLeft = refScrollX.current;
         if (elContainer.scrollLeft >= elContent.clientWidth) {
@@ -22,17 +23,19 @@ const SliderContainer = ({ children, initialOffsetX, contentWidth, className }) 
           elContainer.scrollLeft = 0;
         }
       }
-    }, [refContainer, refContent])
+    }, [refContainer, refContent, isPlaying])
   );
 
   return (
     <div
       ref={refContainer}
-      className={`slider-container overflow-x-hidden whitespace-nowrap max-w-full pointer-events-none ${className}`}>
-      <div ref={refContent} className="inline-block">
+      onMouseEnter={() => setIsPlaying(false)}
+      onMouseLeave={() => setIsPlaying(true)}
+      className={`slider-container overflow-hidden whitespace-nowrap max-w-full ${className}`}>
+      <div ref={refContent} className="inline-flex items-center">
         {children}
       </div>
-      <div className={enabled ? "inline-block" : "hidden"}>{children}</div>
+      <div className={enabled ? "inline-flex items-center" : "hidden"}>{children}</div>
     </div>
   );
 };
@@ -40,7 +43,7 @@ const SliderContainer = ({ children, initialOffsetX, contentWidth, className }) 
 export const SliderItem = ({ children, width }) => {
   return (
     <div
-      className="inline-flex justify-center items-center mx-4 h-[50px] relative"
+      className="flex justify-center items-center mx-4 h-[50px] pointer-events-none"
       style={{ width }}>
       {children}
     </div>
