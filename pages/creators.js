@@ -97,6 +97,28 @@ const creatorItems = [
     ],
   },
   {
+    name: "Charlotte Sørensen",
+    image: "/creators/charlotte_sorensen.jpg",
+    tags: ["Content", "Beauty", "Livsstil", "Fashion", "Familie"],
+    texts: [
+      "Charlotte er utrolig kreativ til at skabe inspirerende indhold, med fokus på tidens trends og tendenser. Hun deler ud af sin livsstil, fashion og beauty, og er en unik skaber indenfor dette.",
+      "Charlotte Sørensen er 21 år, og bor i et hus i Nordjylland sammen med sin kæreste Frederik og sin hund Wilma, hvor de skal igang med en tilbygning til huset.",
+      "Udover hun har sin influencer side på Instagram, er hun også selvstændig i egen virksomhed 'New Content' hvor hun hjælper andre influencer og virksomheder med Content til de sociale medier. Så kreativ og trendig content er en del af Charlottes DNA!",
+    ],
+    socials: [
+      {
+        platform: "Instagram",
+        name: "@charlottessorensen",
+        link: "https://www.instagram.com/charlottessorensen/",
+      },
+      {
+        platform: "Mediakit",
+        name: "3ejrvp",
+        link: "https://measure.woomio.com/#/mediakit/5921830/0/21506",
+      },
+    ],
+  },
+  {
     name: "Anne Bertram",
     image: "/creators/anne_bertram.jpg",
     tags: ["Sport", "Oplevelser", "Beauty", "Livsstil", "Mode"],

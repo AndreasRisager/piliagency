@@ -3,17 +3,16 @@ import Link from "next/link";
 
 export default function CaseCard({ name, image, logo, link }) {
   return (
-    <div className="rounded-xl overflow-hidden group">
-      <Link href={link || "/cases"}>
+    <div className="rounded-xl overflow-hidden group w-full">
+      <Link href={link || "/cases"} className="block h-full">
         <span className="sr-only">{name} Case</span>
-        <div className="grid items-center justify-items-center">
+        <div className="grid items-center justify-items-center relative h-full">
           <Image
-            width="403"
-            height="443"
+            fill
             src={image}
             alt={name + " Case"}
-            quality={10}
-            className="col-span-full row-span-full"
+            quality={50}
+            className="col-span-full row-span-full object-cover"
             priority
           />
           <div className="col-span-full row-span-full m-[8%]">

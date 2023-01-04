@@ -4,16 +4,16 @@ import Layout from "../../components/Layout";
 
 const caseItems = [
   {
-    name: "Poster Case",
+    name: "Poster Store Case",
     image: "/posterstore.webp",
     logo: "/partners/poster-store-logo.png",
     link: "/cases/posterstore",
   },
   {
-    name: "Poster Case",
-    image: "/posterstore.webp",
-    logo: "/partners/poster-store-logo.png",
-    link: "/cases/posterstore",
+    name: "Sport 24 Case",
+    image: "/sport24.jpg",
+    logo: "/partners/sport24-logo.png",
+    link: "/cases/sport24",
   },
 ];
 
@@ -28,7 +28,7 @@ export default function cases() {
             klarede sig.
           </p>
         </div>
-        <section className="max-w-7xl mx-auto px-4 grid grid-cols-2 lg:grid-cols-case-card justify-center justify-items-center gap-4 my-32">
+        <section className="max-w-7xl mx-auto px-4 grid grid-cols-2 lg:grid-cols-case-card grid-rows-[300px] justify-center justify-items-center gap-4 my-32">
           {caseItems.map((item, index) => (
             <CaseCard key={item + index} {...item} />
           ))}
