@@ -81,8 +81,8 @@ const creatorItems = [
     socials: [
       {
         platform: "Instagram",
-        name: "@lisbethfab",
-        link: "https://www.instagram.com/lisbethfab/",
+        name: "@lisbethvfabricius",
+        link: "https://www.instagram.com/lisbethvfabricius/",
       },
       {
         platform: "Mediakit",
