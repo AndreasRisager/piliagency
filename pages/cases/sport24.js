@@ -49,11 +49,11 @@ export default function sport24() {
         <div className="max-w-7xl mx-auto my-32">
           <h2 className="text-3xl md:text-4xl font-serif mb-8">Resultater fra vores samarbejde</h2>
           <div className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-evenly gap-6 md:gap-10">
-            <CaseIcon icon="/user.svg" headline="1" subheadline="Influencer" />
-            <CaseIcon icon="/stars.svg" headline="118.992" subheadline="Antal visninger" />
-            <CaseIcon icon="/location.svg" headline="Danmark" subheadline="Lokation" />
-            <CaseIcon icon="/procent.svg" headline="459.40%" subheadline="Engagementrate" />
-            <CaseIcon icon="/instagram.svg" headline="10" subheadline="Instagram posts" />
+            <CaseIcon icon="/influencer-icon.png" headline="1" subheadline="Influencer" />
+            <CaseIcon icon="/view-icon.png" headline="118.992" subheadline="Antal visninger" />
+            <CaseIcon icon="/location-icon.png" headline="Danmark" subheadline="Lokation" />
+            <CaseIcon icon="/engagement-icon.png" headline="459.40%" subheadline="Engagementrate" />
+            <CaseIcon icon="/post-icon.png" headline="10" subheadline="Instagram posts" />
             <CaseIcon
               icon="/dollar.svg"
               headline="0.11DKK"

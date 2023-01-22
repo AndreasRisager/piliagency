@@ -70,6 +70,28 @@ const creatorItems = [
     ],
   },
   {
+    name: "Lisbeth Vernsted Fabricius",
+    image: "/creators/lisbeth_fabricius.jpg",
+    tags: ["Familie", "Bolig", "Mode", "Oplevelser", "Tabuer"],
+    texts: [
+      "Lisbeth og familien er bedre kendt fra TV2's dokumentarserie, Årgang 20. Serien er en familie- og hverdagsrelateret serie på 18 sæsoner, med fast sæsonstart hvert år i januar.",
+      "Lisbeth er 32 år, bor i en nybygget villa i Ålsgårde og er mor med stort M. Hun har Ayasofia på 3, Theodor på 6 & Filippa-Lucia på 8 år, som hun har sammen med sin mand Christian.",
+      "Hun er meget åben og ærlig i sin tilgang til livet. Hun viser både de svære sider, og når det gælder om at vise styrke og udfordringer. Her især angst, vinkler fra livet med 3 børn og hvordan det kan påvirke parforholdet.",
+    ],
+    socials: [
+      {
+        platform: "Instagram",
+        name: "@lisbethfab",
+        link: "https://www.instagram.com/lisbethfab/",
+      },
+      {
+        platform: "Mediakit",
+        name: "drduv2",
+        link: "https://measure.woomio.com/#/mediakit/5474069/0/21506",
+      },
+    ],
+  },
+  {
     name: "Sanne Natasha",
     image: "/creators/sanne_natasha.jpg",
     texts: [
