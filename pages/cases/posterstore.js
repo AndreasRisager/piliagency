@@ -16,7 +16,7 @@ export default function posterstore() {
           className="col-span-full row-span-full object-cover -z-10"
           priority
         />
-        <div className="col-span-full row-span-full flex flex-col justify-center items-center bg-gradient-to-t from-darkpurple/90">
+        <div className="col-span-full row-span-full flex flex-col justify-center items-center bg-gradient-to-t from-beige/50">
           <div className="p-4">
             <Image
               width="180"
