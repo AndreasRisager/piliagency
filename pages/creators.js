@@ -177,24 +177,6 @@ const creatorItems = [
       },
     ],
   },
-  {
-    name: "Dorthe Lund",
-    image: "/creators/dorthe_lund.jpg",
-    tags: ["Fashion", "Interior", "Livsstil", "Familie"],
-    texts: [
-      "Dorthe Lund er kendt for hendes pæne univers og hendes oprigtighed hos sine følgere.",
-      "Hun er 30 år, mor til skønne Hamilton i alderen 2 år, og bor sammen med kæresten Brizze i Jylland.",
-      "Dorthe deler ud af små og store hverdagesglimt med en troværdighed der skinner igennem og en æstetisk sans for at skabe et smukt univers.",
-      "Hun er en jordnær og livsglad kvinde, der deler ud af hverdagen og livet som mor, livsstil og rejser og snart projekt byg nyt i 2023.",
-    ],
-    socials: [
-      {
-        platform: "Instagram",
-        name: "@dorthelund_",
-        link: "https://www.instagram.com/dorthelund_/",
-      },
-    ],
-  },
 ];
 
 export default function creators() {
