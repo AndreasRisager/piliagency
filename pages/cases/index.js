@@ -28,7 +28,7 @@ export default function cases() {
             klarede sig.
           </p>
         </div>
-        <h1 className="text-5xl font-serif my-4">Under udvikling, kommer snart!<h1>
+        <h2 className="text-5xl font-serif my-4">Under udvikling, kommer snart!</h2>
         
         {/* <section className="max-w-7xl mx-auto px-4 grid grid-cols-2 lg:grid-cols-case-card grid-rows-[300px] justify-center justify-items-center gap-4 my-32">
           {caseItems.map((item, index) => (
