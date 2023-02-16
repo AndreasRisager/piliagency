@@ -15,10 +15,6 @@ export default function Hero() {
               <br />
               der skaber performance!
             </h1>
-            <p className="mt-8 text-xl text-black">
-              Vi skaber succesfulde influencer marketing kampagner ved at forbinde influencers og
-              brands
-            </p>
           </div>
 
           <div className="absolute right-0 z-10 -bottom-16 lg:top-24 lg:-left-16">
