@@ -1,13 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
+import Balancer from "react-wrap-balancer";
 
 export default function Hero() {
   return (
     <section className="overflow-hidden">
       <div className="flex flex-col items-center p-4">
-        <div className="my-20 text-center flex flex-col items-center">
+        <div className="my-20 text-center flex flex-col items-center max-w-7xl">
           <h1 className="text-4xl font-bold text-black sm:text-5xl xl:text-6xl font-serif mb-4">
-            Vi hjælper dig med at <br /> vækste med influencer marketing.
+            <Balancer>Vi hjælper dig med at vækste med influencer marketing.</Balancer>
           </h1>
           <h2 className="text-3xl mb-6">Vi forbinder brands med influencers og skaber magi.</h2>
           <div className="flex gap-4">
