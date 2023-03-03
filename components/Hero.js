@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section className="overflow-hidden">
       <div className="flex flex-col items-center p-4">
-        <div className="my-20 text-center flex flex-col items-center max-w-7xl">
+        <div className="my-12 md:my-20 text-center flex flex-col items-center max-w-7xl">
           <h1 className="text-4xl font-bold text-black sm:text-5xl xl:text-6xl font-serif mb-4">
             <Balancer>Vi hjælper dig med at vækste med influencer marketing.</Balancer>
           </h1>
