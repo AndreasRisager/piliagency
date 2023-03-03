@@ -1,42 +1,110 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
     <section className="overflow-hidden">
-      <div className="flex flex-col lg:flex-row lg:items-stretch lg:min-h-[800px] max-w-7xl mx-auto">
-        <div className="relative flex items-center justify-center w-full lg:order-2 lg:w-1/2">
-          <div className="ml-4 absolute bottom-0 right-0 hidden lg:block">
-            <Image width="586" height="192" src="/curved-lines.png" alt="curved lines" priority />
-          </div>
-
-          <div className="relative px-4 pt-5 sm:pt-12 md:pt-24 pb-16 sm:text-center sm:px-6 md:px-24 2xl:px-32 lg:py-24 lg:text-left z-20">
-            <h1 className="text-4xl font-bold text-black sm:text-5xl xl:text-7xl font-serif">
-              Digital Markedsføring
-              <br />
-              der skaber performance!
-            </h1>
-          </div>
-
-          <div className="absolute right-0 z-10 -bottom-16 lg:top-24 lg:-left-16">
-            <Image
-              width="128"
-              height="128"
-              src="/curved-text.png"
-              alt="Få succes med influencer marketing"
-              priority
-            />
+      <div className="flex flex-col items-center p-4">
+        <div className="my-20 text-center flex flex-col items-center">
+          <h1 className="text-4xl font-bold text-black sm:text-5xl xl:text-6xl font-serif mb-4">
+            Vi hjælper dig med at <br /> vækste med influencer marketing.
+          </h1>
+          <h2 className="text-3xl mb-6">Vi forbinder brands med influencers og skaber magi.</h2>
+          <div className="flex gap-4">
+            <Link
+              href="/kontakt"
+              className="border rounded-md text-lg px-6 py-2 font-medium bg-beige text-white hover:bg-beigehover hover:ring-2 hover:ring-beigehover">
+              Kontakt os
+            </Link>
+            <button
+              onClick={() =>
+                window.scrollTo({
+                  top: 1500,
+                  behavior: "smooth",
+                })
+              }
+              className="border rounded-md text-lg px-6 py-2 font-medium hover:bg-beigehover hover:ring-2 hover:ring-beigehover">
+              Læs mere
+            </button>
           </div>
         </div>
-
-        <div className="relative w-full overflow-hidden lg:order-1 h-96 lg:h-auto lg:w-1/2">
-          <div className="absolute inset-0">
+        <div className="flex gap-4 w-[1400px]">
+          <div className="flex flex-col gap-4 w-96">
             <Image
-              width="828"
-              height="1044"
-              className="object-cover w-full h-full scale-125"
-              src="/hero.jpg"
-              alt="hero"
-              priority
+              src={
+                "https://images.unsplash.com/photo-1677759337900-bfebae5be4b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=743&q=80"
+              }
+              alt="gallery 1"
+              width={400}
+              height={300}
+              className="rounded-md h-1/2 object-cover hidden sm:block"
+            />
+            <Image
+              src={
+                "https://images.unsplash.com/photo-1677477605371-f65e2ef8759d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              }
+              alt="gallery 2"
+              width={400}
+              height={300}
+              className="rounded-md h-1/2 object-cover hidden sm:block"
+            />
+          </div>
+          <Image
+            src={
+              "https://images.unsplash.com/photo-1677678186104-f4b8256d41d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+            }
+            alt="gallery 3"
+            width={400}
+            height={300}
+            className="rounded-md w-96 object-cover"
+          />
+          <div className="flex flex-col gap-4 w-96">
+            <Image
+              src={
+                "https://images.unsplash.com/photo-1670272502333-dcfab6832b18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              }
+              alt="gallery 4"
+              width={400}
+              height={300}
+              className="rounded-md h-1/2 object-cover"
+            />
+            <Image
+              src={
+                "https://images.unsplash.com/photo-1582137923896-678895517c00?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              }
+              alt="gallery 5"
+              width={400}
+              height={300}
+              className="rounded-md h-1/2 object-cover"
+            />
+          </div>
+          <Image
+            src={
+              "https://images.unsplash.com/photo-1670272505340-d906d8d77d03?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            }
+            alt="gallery 6"
+            width={400}
+            height={300}
+            className="rounded-md w-96 object-cover"
+          />
+          <div className="flex flex-col gap-4 w-96">
+            <Image
+              src={
+                "https://images.unsplash.com/photo-1677678185121-0164f95f8531?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1026&q=80"
+              }
+              alt="gallery 7"
+              width={400}
+              height={300}
+              className="rounded-md h-1/2 object-cover hidden sm:block"
+            />
+            <Image
+              src={
+                "https://images.unsplash.com/photo-1677748717329-cba03d7c896f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=826&q=80"
+              }
+              alt="gallery 8"
+              width={400}
+              height={300}
+              className="rounded-md h-1/2 object-cover hidden sm:block"
             />
           </div>
         </div>

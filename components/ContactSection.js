@@ -7,12 +7,9 @@ export default function ContactSection() {
         <div className="flex flex-col items-center md:flex-row">
           <div className="w-full space-y-5 lg:w-3/5 md:pr-4 lg:pr-16">
             <p className="font-medium text-beigehover uppercase">Vi ser frem til at høre fra dig</p>
-            <h2 className="text-2xl font-extrabold text-gray-900 sm:text-3xl md:text-5xl">
-              Vi hjælper dig med at vækste med influencer marketing.
-            </h2>
-            <p className="text-xl text-gray-600 md:pr-16">
+            <h3 className="text-2xl font-medium text-neutral-900 sm:text-3xl">
               Har du lyst til at høre mere om hvordan vi kan hjælpe dig, så kontakt os her.
-            </p>
+            </h3>
           </div>
 
           <div className="w-full mt-16 md:mt-0 lg:w-2/5">

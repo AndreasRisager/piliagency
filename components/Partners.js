@@ -34,7 +34,9 @@ const images = [
 export default function Partners() {
   return (
     <section className="py-28 flex flex-col justify-center items-center">
-      <h3 className="text-xl mb-10 font-bold text-center">Vores samarbejdspartnere</h3>
+      <h3 className="text-3xl mb-10 font-medium font-serif text-center">
+        Brands vi samarbejdet med
+      </h3>
       <PartnerLogos images={images} />
     </section>
   );
