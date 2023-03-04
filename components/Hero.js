@@ -29,7 +29,7 @@ export default function Hero() {
             </button>
           </div>
         </div>
-        <div className="flex gap-4 w-[1400px]">
+        <div className="flex gap-4 w-[1400px] h-[570px]">
           <div className="flex flex-col gap-4 w-96">
             <Image
               src={
@@ -57,7 +57,7 @@ export default function Hero() {
             alt="gallery 3"
             width={400}
             height={300}
-            className="rounded-md w-96 object-cover"
+            className="rounded-md w-96 object-cover hidden sm:block"
           />
           <div className="flex flex-col gap-4 w-96">
             <Image
