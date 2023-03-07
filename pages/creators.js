@@ -6,7 +6,7 @@ const creatorItems = [
   {
     name: "Anna David",
     image: "/creators/anna_david.jpg",
-    tags: ["Familie", "oplevelser", "livsstil", "musik", "natur"],
+    tags: ["Familie", "Oplevelser", "Livsstil", "Musik", "Natur"],
     texts: [
       "Kunstner Anna David er kendt som en fremragende sanger og sangskriver, som formår at bjergtage sit publikum med sin musik og sprøde smukke stemme.",
       'Anna David har været en kendt personlighed længe. Som 15 årig debuterede Anna som sanger på den internationale scene og samtidig som skuespiller i Lars von Triers musicalfilm "Dancer in the Dark". Året var 2000.',
@@ -24,6 +24,11 @@ const creatorItems = [
         name: "@annadavidmusic",
         link: "https://www.instagram.com/annadavidmusic/",
       },
+      {
+        platform: "Mediakit",
+        name: "piliagency1448",
+        link: "https://booking.bloggersdelight.dk/widgets/offer?offer=lsQmF"
+      }
     ],
     priority: true,
   },
@@ -43,57 +48,39 @@ const creatorItems = [
         name: "@mettecsommer",
         link: "https://www.instagram.com/mettecsommer/",
       },
+      {
+        platform: "Mediakit",
+        name: "piliagency1448",
+        link: "https://booking.bloggersdelight.dk/widgets/offer?offer=Pswxt"
+      }
     ],
   },
   {
-    name: "Line Dupont",
-    image: "/creators/line_dupont.jpg",
-    tags: ["Familie", "DIY", "Bolig", "Oplevelser"],
+    name: "Anne Bertram",
+    image: "/creators/anne_bertram.jpg",
+    tags: ["Sport", "Familie", "Beauty", "Livsstil", "Mode"],
     texts: [
-      "Line er kendt for hendes inspirerende og vilde bolig univers!",
-      "Man kan også se på Lines tal, at hun inspirere mange af sine følgere! Hun når 92,453.19 AVG. REACH samt 1,245.82 AVG. ENGAGEMENT på sine post's, hvor hun har 107 tusinde følgere.",
-      "Hendes passion har altid været DIY og indretning, som startede da hun istandsatte sin første lejlighed som 18 årig.",
-      "Hun er kreativ på alle mulige måder og elsker alt, hvor hun kan bruger sine hænder. Herunder Ikeahacks, høje paneler, stuklofter, orangeriet, kunst, DIY bord mm. Derudover elsker hun indretning og interiører. Alt som relaterer sig til bolig.",
-      "Line er kommercielt interesant for bolig, kunst, DIY og familie relaterede virksomheder.",
+      "Anne Bertram er 33 år, født og opvokset på fyn men har været bosat i København de sidste 10 år. Hun har 2 dejlige drenge på 1 og 4 år, som hun har sammen med sin kæreste Kim. De har bosat sig i Løkken efter 10 år i København, da de trængte til familie omkring sig, vand, strand, skov og ro.",
+      "Hun spiller håndbold, elsker at male , at løbe og hun elsker at lave velgørenhed og meget gerne med fokus på børn.",
+      "Hendes gode data afspejler at hendes profil er helt unik og at hun formår at engagere sig med sine følger. Det kan især ses i hendes høje ENGAGEMENT RATE på 5,78% og hendes flotte rækkevidde. Anne Bertram er kommercielt interesant for Beauty og Tøj virksomheder samt virksomheder som henvender sig til familielivet.",
     ],
     socials: [
       {
         platform: "Instagram",
-        name: "@_linedupont_",
-        link: "https://www.instagram.com/_linedupont_/",
+        name: "@annebertram",
+        link: "https://www.instagram.com/annebertram/",
       },
       {
         platform: "Mediakit",
-        name: "2bgppc",
-        link: "https://measure.woomio.com/#/mediakit/5478401/0/21506",
-      },
-    ],
-  },
-  {
-    name: "Lisbeth Vernsted Fabricius",
-    image: "/creators/lisbeth_fabricius.jpg",
-    tags: ["Familie", "Bolig", "Mode", "Oplevelser", "Tabuer"],
-    texts: [
-      "Lisbeth og familien er bedre kendt fra TV2's dokumentarserie, Årgang 20. Serien er en familie- og hverdagsrelateret serie på 18 sæsoner, med fast sæsonstart hvert år i januar.",
-      "Lisbeth er 32 år, bor i en nybygget villa i Ålsgårde og er mor med stort M. Hun har Ayasofia på 3, Theodor på 6 & Filippa-Lucia på 8 år, som hun har sammen med sin mand Christian.",
-      "Hun er meget åben og ærlig i sin tilgang til livet. Hun viser både de svære sider, og når det gælder om at vise styrke og udfordringer. Her især angst, vinkler fra livet med 3 børn og hvordan det kan påvirke parforholdet.",
-    ],
-    socials: [
-      {
-        platform: "Instagram",
-        name: "@lisbethvfabricius",
-        link: "https://www.instagram.com/lisbethvfabricius/",
-      },
-      {
-        platform: "Mediakit",
-        name: "drduv2",
-        link: "https://measure.woomio.com/#/mediakit/5474069/0/21506",
-      },
+        name: "piliagency1448",
+        link: "https://booking.bloggersdelight.dk/widgets/offer?offer=qTsB2"
+      }
     ],
   },
   {
     name: "Sanne Natasha",
     image: "/creators/sanne_natasha.jpg",
+    tags: ["Familie","Elsker at lave sjove og releterbar reels", "Oplevelser", "Sport"],
     texts: [
       "Sanne Natasha er 35 år, bor i Valby og er fantastisk sjov i hendes formidling af reels. Sanne arbejder som fuldtid med sin Instagram profil, som er i rivende udvikling!",
       "Hun formår at være relaterbar og personlig i hendes content. Man kan godt sige at hun virkelig har knækket koden til at underholde sine følgere!",
@@ -113,32 +100,39 @@ const creatorItems = [
       },
       {
         platform: "Mediakit",
-        name: "ogvpj4",
-        link: "https://measure.woomio.com/#/mediakit/6243384/0/21506",
+        name: "piliagency1448",
+        link: "https://booking.bloggersdelight.dk/widgets/offer?offer=x67Ih",
       },
     ],
   },
   {
-    name: "Anne Bertram",
-    image: "/creators/anne_bertram.jpg",
-    tags: ["Sport", "Oplevelser", "Beauty", "Livsstil", "Mode"],
+    name: "Line Dupont",
+    image: "/creators/line_dupont.jpg",
+    tags: ["Familie", "DIY", "Bolig", "Indretning", "Gør det selv", "Oplevelser"],
     texts: [
-      "Anne Bertram er 33 år, født og opvokset på fyn men har været bosat i København de sidste 10 år. Hun har 2 dejlige drenge på 1 og 4 år, som hun har sammen med sin kæreste Kim. De har bosat sig i Løkken efter 10 år i København, da de trængte til familie omkring sig, vand, strand, skov og ro.",
-      "Hun spiller håndbold, elsker at male , at løbe og hun elsker at lave velgørenhed og meget gerne med fokus på børn.",
-      "Hendes gode data afspejler at hendes profil er helt unik og at hun formår at engagere sig med sine følger. Det kan især ses i hendes høje ENGAGEMENT RATE på 5,78% og hendes flotte rækkevidde. Anne Bertram er kommercielt interesant for Beauty og Tøj virksomheder samt virksomheder som henvender sig til familielivet.",
+      "Line er kendt for hendes inspirerende og vilde bolig univers!",
+      "Man kan også se på Lines tal, at hun inspirere mange af sine følgere! Hun når 92,453.19 AVG. REACH samt 1,245.82 AVG. ENGAGEMENT på sine post's, hvor hun har 107 tusinde følgere.",
+      "Hendes passion har altid været DIY og indretning, som startede da hun istandsatte sin første lejlighed som 18 årig.",
+      "Hun er kreativ på alle mulige måder og elsker alt, hvor hun kan bruger sine hænder. Herunder Ikeahacks, høje paneler, stuklofter, orangeriet, kunst, DIY bord mm. Derudover elsker hun indretning og interiører. Alt som relaterer sig til bolig.",
+      "Line er kommercielt interesant for bolig, kunst, DIY og familie relaterede virksomheder.",
     ],
     socials: [
       {
         platform: "Instagram",
-        name: "@annebertram",
-        link: "https://www.instagram.com/annebertram/",
+        name: "@_linedupont_",
+        link: "https://www.instagram.com/_linedupont_/",
+      },
+      {
+        platform: "Mediakit",
+        name: "piliagency1448",
+        link: "https://booking.bloggersdelight.dk/widgets/offer?offer=CDTTk",
       },
     ],
   },
   {
     name: "Simone Lykke",
     image: "/creators/simone_lykke.jpg",
-    tags: ["Vegan", "Interior", "Bæredygtig", "Familie"],
+    tags: ["Vegan", "Interior", "Bæredygtig", "Familie", "Sorg og Angst"],
     texts: [
       "Simone Lykke slog for alvor igennem i 2016 i den anmelderroste danske biograffilm Hundeliv.",
       "Siden da har hun slået sit navn fast i både ind- og udland, som alt fra den den tjekkede skønhedsdronning Amanda i Friheden 2 til Benedikte Skans i hit-serien Kastanjemanden.",
@@ -153,6 +147,56 @@ const creatorItems = [
         name: "@simonelykkep",
         link: "https://www.instagram.com/simonelykkep/",
       },
+      {
+        platform: "Mediakit",
+        name: "piliagency1448",
+        link: "https://booking.bloggersdelight.dk/widgets/offer?offer=Qg8U6",
+      },
+    ],
+  },
+  {
+    name: "Lisbeth Vernsted Fabricius",
+    image: "/creators/lisbeth_fabricius.jpg",
+    tags: ["Familie", "Angst", "Deltager i årgang 20 (TV2)", "Mor til 3", "Livsstil", "Bolig"],
+    texts: [
+      "Lisbeth og familien er bedre kendt fra TV2's dokumentarserie, Årgang 20. Serien er en familie- og hverdagsrelateret serie på 18 sæsoner, med fast sæsonstart hvert år i januar.",
+      "Lisbeth er 32 år, bor i en nybygget villa i Ålsgårde og er mor med stort M. Hun har Ayasofia på 3, Theodor på 6 & Filippa-Lucia på 8 år, som hun har sammen med sin mand Christian.",
+      "Hun er meget åben og ærlig i sin tilgang til livet. Hun viser både de svære sider, og når det gælder om at vise styrke og udfordringer. Her især angst, vinkler fra livet med 3 børn og hvordan det kan påvirke parforholdet.",
+    ],
+    socials: [
+      {
+        platform: "Instagram",
+        name: "@lisbethvfabricius",
+        link: "https://www.instagram.com/lisbethvfabricius/",
+      },
+      {
+        platform: "Mediakit",
+        name: "piliagency1448",
+        link: "https://booking.bloggersdelight.dk/widgets/offer?offer=qilfg",
+      },
+    ],
+  },
+  {
+    name: "Malene Østergaard",
+    image: "/creators/malene_ostergaard.jpg",
+    tags: ["Vild Med Dans", "Mode", "Beauty", "Mor til 2", "Livsstil"],
+    texts: [
+      "Malene er 34 år, bor i en lejlighed på Islands Brygge og elsker livet som mor. Sammen med hendes mand Christian har hun drengene William og Oliver på 3 og 5år.",
+      "Malene er idag en af Danmarks mest kendte dansere, udover at have vundet 'vild med Dans' i 2022 med skuespilleren Caspar Phillipson har hun også danset for artister som Jlo, Pitbull, Usher, Calvin Harris, Zendaya og Big Sean",
+      "Hendes passion har altid været dans, bevægelse og koreografi, hvilket også afspejler sig i hendes kreative reels, hvor man altid er efterladt med et smil på læben.",
+      "Hun nyder at dele hacks og tricks på alle mulige måder og elsker alt som relaterer sig til mode, beauty og selvfølgelig familielivet. For Malene handler det om at skabe magi i hverdagen, og det kan helt sikkert mærkes hos hendes trofaste følgere."
+    ],
+    socials: [
+      {
+        platform: "Instagram",
+        name: "@officialmalene",
+        link: "https://instagram.com/officialmalene/",
+      },
+      {
+        platform: "Mediakit",
+        name: "piliagency1448",
+        link: "https://booking.bloggersdelight.dk/widgets/offer?offer=r0qeC"
+      }
     ],
   },
 ];

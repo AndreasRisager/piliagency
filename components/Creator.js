@@ -19,10 +19,10 @@ export default function Creator({ name, image, tags = [], texts, lines, socials 
       <div>
         <h2 className="text-4xl text-gray-900 capitalize">{name}</h2>
         <ul
-          className="mb-3 capitalize text-gray-700 flex flex-wrap list-disc space-x-7"
+          className="mb-3 capitalize text-gray-700 flex flex-nowrap list-disc space-x-7 overflow-x-scroll no-scrollbar"
           role="list">
           {tags.map((tag) => (
-            <li key={tag} className="first:list-none">
+            <li key={tag} className="first:list-none flex-shrink-0">
               {tag}
             </li>
           ))}
