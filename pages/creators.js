@@ -27,8 +27,8 @@ const creatorItems = [
       {
         platform: "Mediakit",
         name: "piliagency1448",
-        link: "https://booking.bloggersdelight.dk/widgets/offer?offer=lsQmF"
-      }
+        link: "https://booking.bloggersdelight.dk/widgets/offer?offer=lsQmF",
+      },
     ],
     priority: true,
   },
@@ -51,8 +51,8 @@ const creatorItems = [
       {
         platform: "Mediakit",
         name: "piliagency1448",
-        link: "https://booking.bloggersdelight.dk/widgets/offer?offer=Pswxt"
-      }
+        link: "https://booking.bloggersdelight.dk/widgets/offer?offer=Pswxt",
+      },
     ],
   },
   {
@@ -73,14 +73,41 @@ const creatorItems = [
       {
         platform: "Mediakit",
         name: "piliagency1448",
-        link: "https://booking.bloggersdelight.dk/widgets/offer?offer=qTsB2"
-      }
+        link: "https://booking.bloggersdelight.dk/widgets/offer?offer=qTsB2",
+      },
+    ],
+  },
+  {
+    name: "Kristine Melgaard-Mani",
+    image: "/creators/kristine_melgaard-mani.jpg",
+    tags: ["økonomi", "opskrifter", "familie", "oplevelser"],
+    texts: [
+      "Kristine er kendt for at dele økonomiske tips, madplaner, opskrifter og oplevelser for familien - alt sammen med et ønske om, at hjælpe andre til at få et bedre økonomisk overblik.",
+      "Profilen har været på en vild vækstrejse, og er på bare ét år gået fra 10.000 følgere til over 78.000 følgere, og Kristine har været på live tv flere gange og er omtalt i flere magasiner.",
+      "Kristine er 32 år gammel og bor i Helsingør med sin mand og deres to børn, Annie på 6 år og Wilhelm på 3 år.",
+    ],
+    socials: [
+      {
+        platform: "Instagram",
+        name: "@familieliv_paabudget",
+        link: "https://www.instagram.com/familieliv_paabudget/",
+      },
+      {
+        platform: "Mediakit",
+        name: "piliagency1448",
+        link: "https://booking.bloggersdelight.dk/widgets/offer?offer=TsBt0",
+      },
     ],
   },
   {
     name: "Sanne Natasha",
     image: "/creators/sanne_natasha.jpg",
-    tags: ["Familie","Elsker at lave sjove og releterbar reels", "Oplevelser", "Sport"],
+    tags: [
+      "Familie",
+      "Elsker at lave sjove og releterbar reels",
+      "Oplevelser",
+      "Sport",
+    ],
     texts: [
       "Sanne Natasha er 35 år, bor i Valby og er fantastisk sjov i hendes formidling af reels. Sanne arbejder som fuldtid med sin Instagram profil, som er i rivende udvikling!",
       "Hun formår at være relaterbar og personlig i hendes content. Man kan godt sige at hun virkelig har knækket koden til at underholde sine følgere!",
@@ -108,7 +135,14 @@ const creatorItems = [
   {
     name: "Line Dupont",
     image: "/creators/line_dupont.jpg",
-    tags: ["Familie", "DIY", "Bolig", "Indretning", "Gør det selv", "Oplevelser"],
+    tags: [
+      "Familie",
+      "DIY",
+      "Bolig",
+      "Indretning",
+      "Gør det selv",
+      "Oplevelser",
+    ],
     texts: [
       "Line er kendt for hendes inspirerende og vilde bolig univers!",
       "Man kan også se på Lines tal, at hun inspirere mange af sine følgere! Hun når 92,453.19 AVG. REACH samt 1,245.82 AVG. ENGAGEMENT på sine post's, hvor hun har 107 tusinde følgere.",
@@ -157,7 +191,14 @@ const creatorItems = [
   {
     name: "Lisbeth Vernsted Fabricius",
     image: "/creators/lisbeth_fabricius.jpg",
-    tags: ["Familie", "Angst", "Deltager i årgang 20 (TV2)", "Mor til 3", "Livsstil", "Bolig"],
+    tags: [
+      "Familie",
+      "Angst",
+      "Deltager i årgang 20 (TV2)",
+      "Mor til 3",
+      "Livsstil",
+      "Bolig",
+    ],
     texts: [
       "Lisbeth og familien er bedre kendt fra TV2's dokumentarserie, Årgang 20. Serien er en familie- og hverdagsrelateret serie på 18 sæsoner, med fast sæsonstart hvert år i januar.",
       "Lisbeth er 32 år, bor i en nybygget villa i Ålsgårde og er mor med stort M. Hun har Ayasofia på 3, Theodor på 6 & Filippa-Lucia på 8 år, som hun har sammen med sin mand Christian.",
@@ -184,7 +225,7 @@ const creatorItems = [
       "Malene er 34 år, bor i en lejlighed på Islands Brygge og elsker livet som mor. Sammen med hendes mand Christian har hun drengene William og Oliver på 3 og 5år.",
       "Malene er idag en af Danmarks mest kendte dansere, udover at have vundet 'vild med Dans' i 2022 med skuespilleren Caspar Phillipson har hun også danset for artister som Jlo, Pitbull, Usher, Calvin Harris, Zendaya og Big Sean",
       "Hendes passion har altid været dans, bevægelse og koreografi, hvilket også afspejler sig i hendes kreative reels, hvor man altid er efterladt med et smil på læben.",
-      "Hun nyder at dele hacks og tricks på alle mulige måder og elsker alt som relaterer sig til mode, beauty og selvfølgelig familielivet. For Malene handler det om at skabe magi i hverdagen, og det kan helt sikkert mærkes hos hendes trofaste følgere."
+      "Hun nyder at dele hacks og tricks på alle mulige måder og elsker alt som relaterer sig til mode, beauty og selvfølgelig familielivet. For Malene handler det om at skabe magi i hverdagen, og det kan helt sikkert mærkes hos hendes trofaste følgere.",
     ],
     socials: [
       {
@@ -195,8 +236,8 @@ const creatorItems = [
       {
         platform: "Mediakit",
         name: "piliagency1448",
-        link: "https://booking.bloggersdelight.dk/widgets/offer?offer=r0qeC"
-      }
+        link: "https://booking.bloggersdelight.dk/widgets/offer?offer=r0qeC",
+      },
     ],
   },
 ];
@@ -210,8 +251,8 @@ export default function creators() {
             Vores creators.
           </h1>
           <p className="text-base text-gray-500 sm:max-w-md lg:text-xl md:max-w-3xl">
-            Fremragende udvalg af influencere sikrer, at dit budskab når frem til de rigtige
-            målgrupper.
+            Fremragende udvalg af influencere sikrer, at dit budskab når frem
+            til de rigtige målgrupper.
           </p>
         </div>
         <div className="container max-w-6xl mx-auto px-4 sm:px-20 md:px-4 lg:px-16 flex flex-col gap-20">
