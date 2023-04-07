@@ -9,10 +9,11 @@ export default function Features() {
             Troværdige kampagner:
           </h2>
           <p className="text-gray-700 lg:text-xl">
-            Det der gør at influencer marketing skiller sig ud, er særligt én ting: autenticitet og
-            troværdigheden! Aldrig har det været mere muligt at lave personlige kampagner. At
-            kombinere et produkt eller ydelse i influenternes hverdag, så det passer naturligt ind,
-            det giver os mulighed for at lave kampagner som bliver autentiske.
+            Det der gør at influencer marketing skiller sig ud, er særligt én
+            ting: autenticitet og troværdigheden! Aldrig har det været mere
+            muligt at lave personlige kampagner. At kombinere et produkt eller
+            ydelse i influenternes hverdag, så det passer naturligt ind, det
+            giver os mulighed for at lave kampagner som bliver autentiske.
           </p>
         </div>
         <div>
@@ -29,15 +30,16 @@ export default function Features() {
             Datadrevet influencer marketing:
           </h2>
           <p className="text-gray-700 lg:text-xl">
-            Vidste du at influencer marketing er muligt at data drive. Vi har adgang til alle vores
-            influencers data og kan dermed nå ud til din målgruppe og opnå dine KPI'er.
+            Vidste du at influencer marketing er muligt at data drive. Vi har
+            adgang til alle vores influencers data og kan dermed nå ud til din
+            målgruppe og opnå dine KPI'er.
           </p>
         </div>
         <div>
           <Image
-            height="513"
-            width="718"
-            src="/screens.jpg"
+            height="1080"
+            width="1920"
+            src="/images/IMG_0689.jpg"
             alt="skærme med data"
             className="rounded-2xl shadow-lg"
           />
@@ -47,12 +49,13 @@ export default function Features() {
             Dygtigste influencere som lever af dette arbejde.
           </h2>
           <p className="text-gray-700 lg:text-xl">
-            Influencers lever af at formidle brugbart og flot content. De kan bruge al deres tid på
-            det, da vi sidder med alt det tekniske og formelle. Der er ikke mange influencers i
-            Danmark, der har en kommerciel forståelse, og ved hvor vigtigt det er at skabe værdi på
-            metrics som klik, salg, nye købestærke følgere, social proof osv. Vores influencers er i
-            fællesskabet med os, klædt på til at skabe mest mulig værdi for vores
-            samarbejdspartnere.
+            Influencers lever af at formidle brugbart og flot content. De kan
+            bruge al deres tid på det, da vi sidder med alt det tekniske og
+            formelle. Der er ikke mange influencers i Danmark, der har en
+            kommerciel forståelse, og ved hvor vigtigt det er at skabe værdi på
+            metrics som klik, salg, nye købestærke følgere, social proof osv.
+            Vores influencers er i fællesskabet med os, klædt på til at skabe
+            mest mulig værdi for vores samarbejdspartnere.
           </p>
         </div>
         <div>
