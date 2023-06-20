@@ -47,6 +47,8 @@ const images = [
     width: 100,
   },
   { url: "/partners/unicef-logo.png", alt: "unicef" },
+  { url: "/partners/lyko-logo.png", alt: "lyko", width: 110 },
+  { url: "/partners/once-upon-logo.png", alt: "once upon" },
 ];
 
 export default function Partners() {

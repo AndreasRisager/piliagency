@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function SiteFooter() {
   return (
     <footer className="text-gray-700 bg-white relative">
-      <div className="mx-auto max-w-7xl px-4 py-8 ">
+      <div className="mx-auto max-w-7xl px-4 py-8 relative">
         <div className="flex flex-col sm:flex-row items-center sm:items-start text-center gap-y-12 gap-x-4 mb-12">
           <div className="flex-1 z-10 flex flex-col text-start">
             <Image
@@ -73,8 +73,8 @@ export default function SiteFooter() {
             </a>
           </span>
         </div>
+        <div className="h-80 w-96 rounded-full bg-beige/25 absolute top-0 -left-8 blur-[60px] pointer-events-none"></div>
       </div>
-      <div className="h-80 w-96 rounded-full bg-beige/25 absolute top-0 left-0 blur-[60px] pointer-events-none"></div>
     </footer>
   );
 }

@@ -2,7 +2,12 @@ import { useCallback, useContext, useRef, useState } from "react";
 import { SizeContext } from "../utils/size-observer";
 import useAnimationFrame from "../utils/use-animation-frame";
 
-const SliderContainer = ({ children, initialOffsetX, contentWidth, className }) => {
+const SliderContainer = ({
+  children,
+  initialOffsetX,
+  contentWidth,
+  className,
+}) => {
   const { innerWidth } = useContext(SizeContext);
   const refScrollX = useRef(initialOffsetX);
   const refContainer = useRef(null);
@@ -31,11 +36,14 @@ const SliderContainer = ({ children, initialOffsetX, contentWidth, className }) 
       ref={refContainer}
       onMouseEnter={() => setIsPlaying(false)}
       onMouseLeave={() => setIsPlaying(true)}
-      className={`slider-container overflow-hidden whitespace-nowrap max-w-full ${className}`}>
+      className={`slider-container overflow-hidden whitespace-nowrap max-w-full ${className}`}
+    >
       <div ref={refContent} className="inline-flex items-center">
         {children}
       </div>
-      <div className={enabled ? "inline-flex items-center" : "hidden"}>{children}</div>
+      <div className={enabled ? "inline-flex items-center" : "hidden"}>
+        {children}
+      </div>
     </div>
   );
 };
@@ -44,7 +52,8 @@ export const SliderItem = ({ children, width }) => {
   return (
     <div
       className="flex justify-center items-center mx-4 h-[50px] pointer-events-none"
-      style={{ width }}>
+      style={{ width }}
+    >
       {children}
     </div>
   );

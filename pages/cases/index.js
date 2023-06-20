@@ -15,6 +15,18 @@ const caseItems = [
     logo: "/partners/sport24-logo.png",
     link: "/cases/sport24",
   },
+  {
+    name: "Once Upon Case",
+    image: "/onceupon.webp",
+    logo: "/partners/once-upon-logo.png",
+    link: "/cases/onceupon",
+  },
+  {
+    name: "Lyko Case",
+    image: "/lyko.jpg",
+    logo: "/partners/lyko-logo.png",
+    link: "/cases/lyko",
+  },
 ];
 
 export default function cases() {
@@ -24,11 +36,11 @@ export default function cases() {
         <div className="max-w-3xl mx-auto px-4 my-32 text-center">
           <h1 className="text-6xl font-serif mb-4">Cases</h1>
           <p className="text-xl leading-relaxed">
-            Gennemse vores influencer marketing kampagner, og se, hvordan vores tidligere kampagner
-            klarede sig.
+            Gennemse vores influencer marketing kampagner, og se, hvordan vores
+            tidligere kampagner klarede sig.
           </p>
         </div>
-        <section className="max-w-7xl mx-auto px-4 grid grid-cols-2 lg:grid-cols-case-card grid-rows-[300px] justify-center justify-items-center gap-4 my-32">
+        <section className="max-w-7xl mx-auto px-4 grid grid-cols-2 lg:grid-cols-case-card justify-center justify-items-center gap-4 my-32">
           {caseItems.map((item, index) => (
             <CaseCard key={item + index} {...item} />
           ))}

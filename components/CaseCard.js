@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function CaseCard({ name, image, logo, link }) {
   return (
-    <div className="rounded-xl overflow-hidden group w-full">
+    <div className="rounded-xl overflow-hidden group w-full min-h-[300px]">
       <Link href={link || "/cases"} className="block h-full">
         <span className="sr-only">{name} Case</span>
         <div className="grid items-center justify-items-center relative h-full">
