@@ -1,11 +1,19 @@
 import { useState } from "react";
 import Image from "next/image";
 
-export default function Creator({ name, image, tags = [], texts, lines, socials = [], priority }) {
+export default function Creator({
+  name,
+  image,
+  tags = [],
+  texts,
+  lines,
+  socials = [],
+  priority,
+}) {
   const [readMore, setReadMore] = useState(false);
 
   return (
-    <article className="grid md:grid-cols-2 gap-8">
+    <article className="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div>
         <Image
           width="500"
@@ -20,7 +28,8 @@ export default function Creator({ name, image, tags = [], texts, lines, socials 
         <h2 className="text-4xl text-gray-900 capitalize">{name}</h2>
         <ul
           className="mb-3 capitalize text-gray-700 flex flex-nowrap list-disc space-x-7 overflow-x-scroll no-scrollbar"
-          role="list">
+          role="list"
+        >
           {tags.map((tag) => (
             <li key={tag} className="first:list-none flex-shrink-0">
               {tag}
@@ -35,12 +44,16 @@ export default function Creator({ name, image, tags = [], texts, lines, socials 
             texts.length > lines &&
             texts.slice(lines).map((text, index) => <p key={index}>{text}</p>)}
           {texts.length > lines && (
-            <button className="block mb-4" onClick={() => setReadMore((s) => !s)}>
+            <button
+              className="block mb-4"
+              onClick={() => setReadMore((s) => !s)}
+            >
               {readMore ? "Læs mindre" : "Læs mere"}
               <span
                 className={`inline-block border-x-[6px] border-transparent border-y-black ml-1 mb-px pointer-events-none ${
                   readMore ? "border-b-[6px]" : "border-t-[6px]"
-                }`}></span>
+                }`}
+              ></span>
             </button>
           )}
         </div>
@@ -52,7 +65,8 @@ export default function Creator({ name, image, tags = [], texts, lines, socials 
                 href={social.link}
                 className="text-blue-500"
                 target="_blank"
-                rel="noopener noreferrer">
+                rel="noopener noreferrer"
+              >
                 {social.name}
               </a>
             </p>
