@@ -25,7 +25,7 @@ export default function onceupon() {
             <CaseIcon headline="1" subheadline="Post" />
             <CaseIcon headline="2" subheadline="Reels" />
             <CaseIcon headline="73.283" subheadline="Totale afspilninger" />
-            <CaseIcon headline="17.945%" subheadline="Totale Eksponeringer" />
+            <CaseIcon headline="17.945" subheadline="Totale Eksponeringer" />
             <CaseIcon headline="1.046" subheadline="Totale Engagements" />
             <CaseIcon headline="1,34 %" subheadline="Engagement Rate" />
           </div>
