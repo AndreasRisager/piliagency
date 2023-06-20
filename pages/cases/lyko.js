@@ -23,7 +23,7 @@ export default function lyko() {
           <div className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-evenly gap-6 md:gap-10">
             <CaseIcon headline="1" subheadline="Influencer" />
             <CaseIcon headline="63.006" subheadline="Antal visninger" />
-            <CaseIcon headline="741%" subheadline="Klik på link" />
+            <CaseIcon headline="741" subheadline="Klik på link" />
             <CaseIcon headline="Danmark" subheadline="Lokation" />
             <CaseIcon headline="7" subheadline="Instagram sekvenser" />
             <CaseIcon
