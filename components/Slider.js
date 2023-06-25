@@ -38,10 +38,17 @@ const SliderContainer = ({
       onMouseLeave={() => setIsPlaying(true)}
       className={`slider-container overflow-hidden whitespace-nowrap max-w-full ${className}`}
     >
-      <div ref={refContent} className="inline-flex items-center">
+      <div
+        ref={refContent}
+        className="inline-flex items-center overflow-hidden"
+      >
         {children}
       </div>
-      <div className={enabled ? "inline-flex items-center" : "hidden"}>
+      <div
+        className={
+          enabled ? "inline-flex items-center overflow-hidden" : "hidden"
+        }
+      >
         {children}
       </div>
     </div>

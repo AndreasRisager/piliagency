@@ -48,7 +48,175 @@ const images = [
   },
   { url: "/partners/unicef-logo.png", alt: "unicef" },
   { url: "/partners/lyko-logo.png", alt: "lyko", width: 110 },
+  { url: "/partners/aplus-logo.png", alt: "a plus", width: 110 },
   { url: "/partners/once-upon-logo.png", alt: "once upon" },
+  { url: "/partners/aarstiderne-logo.jpg", alt: "aarstiderne" },
+  { url: "/partners/b-young-logo.jpeg", alt: "b.young" },
+  { url: "/partners/babybel-logo.png", alt: "babybel", width: 70 },
+  { url: "/partners/auping-logo.jpg", alt: "auping" },
+  {
+    url: "/partners/biograf-klub-danmark-logo.png",
+    alt: "biograf klub danmark",
+    width: 120,
+  },
+  { url: "/partners/otto-logo.png", alt: "otto", width: 70 },
+  { url: "/partners/bookbeat-logo.png", alt: "bookbeat" },
+  { url: "/partners/brio-logo.png", alt: "brio", width: 110 },
+  {
+    url: "/partners/clean-beauty-shop-logo.jpg",
+    alt: "clean beauty shop",
+  },
+  {
+    url: "/partners/eva-solo-logo.webp",
+    alt: "eva solo",
+  },
+  {
+    url: "/partners/flexa-logo.png",
+    alt: "flexa",
+  },
+  {
+    url: "/partners/geomag-logo.jpg",
+    alt: "geomag",
+  },
+  {
+    url: "/partners/hp-logo.png",
+    alt: "hp",
+    width: 55,
+  },
+  {
+    url: "/partners/id-hair-logo.jpg",
+    alt: "id hair",
+  },
+  {
+    url: "/partners/it-lagersalg-logo.png",
+    alt: "it lagersalg",
+  },
+  {
+    url: "/partners/libresse-logo.jpeg",
+    alt: "libresse",
+    width: 110,
+  },
+  {
+    url: "/partners/little-savage-logo.jpg.webp",
+    alt: "little savage",
+    width: 55,
+  },
+  {
+    url: "/partners/lumega-home-logo.png",
+    alt: "lumega home",
+  },
+  {
+    url: "/partners/mantel-logo.png",
+    alt: "mantel",
+    width: 65,
+  },
+  {
+    url: "/partners/mashup-logo.jpg",
+    alt: "mashup",
+    width: 60,
+  },
+  {
+    url: "/partners/mezina-logo.png",
+    alt: "mezina",
+  },
+  {
+    url: "/partners/nordisk-film-logo.jpg",
+    alt: "nordisk film",
+    width: 35,
+  },
+  {
+    url: "/partners/number-nine-logo.png",
+    alt: "number nine",
+  },
+  {
+    url: "/partners/oslo-skin-lab-logo.png",
+    alt: "oslo skin lab",
+    width: 50,
+  },
+  {
+    url: "/partners/queen-flowers-logo.png",
+    alt: "queen flowers",
+    width: 100,
+  },
+  {
+    url: "/partners/rabatta-logo.png",
+    alt: "rabatta",
+    width: 120,
+  },
+  {
+    url: "/partners/retnemt-logo.jpg.webp",
+    alt: "retnemt",
+  },
+  {
+    url: "/partners/roemer-logo.png",
+    alt: "roemer",
+    width: 140,
+  },
+  {
+    url: "/partners/ronsbol-logo.png",
+    alt: "ronsbol",
+    width: 100,
+  },
+  {
+    url: "/partners/sandstone-logo.png",
+    alt: "sandstone scandinavia",
+  },
+  {
+    url: "/partners/scandlines-logo.png",
+    alt: "scandlines",
+  },
+  {
+    url: "/partners/sco-logo.png",
+    alt: "sco danish design",
+    width: 80,
+  },
+  {
+    url: "/partners/sega-logo.png",
+    alt: "sega",
+  },
+  {
+    url: "/partners/sikkerthjem-logo.png",
+    alt: "sikkerthjem scandinavia",
+  },
+  {
+    url: "/partners/sinful-logo.png",
+    alt: "sinful",
+  },
+  {
+    url: "/partners/tradera-logo.png",
+    alt: "tradera",
+    width: 110,
+  },
+  {
+    url: "/partners/vibholm-logo.png",
+    alt: "vibholm",
+  },
+  {
+    url: "/partners/visit-nordjylland-logo.png",
+    alt: "visit nordjylland",
+  },
+  {
+    url: "/partners/xplora-logo.jpeg",
+    alt: "xplora",
+  },
+  {
+    url: "/partners/flying-tiger-logo.png",
+    alt: "flying tiger",
+  },
+  {
+    url: "/partners/ecooking-logo.png.webp",
+    alt: "ecooking",
+  },
+  {
+    url: "/partners/depend-logo.png",
+    alt: "depend",
+    width: 60,
+  },
+  {
+    url: "/partners/molly-logo.webp",
+    alt: "molly shopping assistance",
+    width: 100,
+  },
 ];
 
 export default function Partners() {
