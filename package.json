@@ -9,9 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "firebase": "^9.18.0",
     "next": "13.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-firebase-hooks": "^5.1.1",
+    "react-pdf": "^7.1.2",
     "react-wrap-balancer": "^0.4.0",
     "sharp": "^0.31.2"
   },

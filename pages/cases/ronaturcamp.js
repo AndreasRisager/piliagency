@@ -3,8 +3,26 @@ import CaseIcon from "../../components/CaseIcon";
 import CTA from "../../components/CTA";
 import Layout from "../../components/Layout";
 import heroImage from "../../public/ronaturcamp.png";
+import { useState } from "react";
+import { pdfjs, Document, Page } from "react-pdf";
+import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import "react-pdf/dist/esm/Page/TextLayer.css";
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+
+const options = {
+  cMapUrl: "cmaps/",
+  standardFontDataUrl: "standard_fonts/",
+};
 
 export default function ronaturcamp() {
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
+
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+  }
+
   return (
     <Layout title="Ro Naturcamp" image={heroImage}>
       <main className="max-w-7xl mx-auto px-4">
@@ -34,10 +52,15 @@ export default function ronaturcamp() {
             <CaseIcon headline="+ 11K" subheadline="Total engagement" />
           </div>
         </div>
-        <iframe
-          src={"/rapport_naturcamp_mette_sommer.pdf"}
-          className="w-full h-screen"
-        ></iframe>
+        <Document
+          file={"/rapport_naturcamp_mette_sommer.pdf"}
+          onLoadSuccess={onDocumentLoadSuccess}
+          options={options}
+        >
+          {Array.from(new Array(numPages), (el, index) => (
+            <Page key={`page_${index + 1}`} pageNumber={index + 1} />
+          ))}
+        </Document>
       </main>
       <CTA />
     </Layout>

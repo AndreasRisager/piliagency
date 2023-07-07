@@ -14,3 +14,7 @@
     scrollbar-width: none;
     /* Firefox */
 }
+.react-pdf__Page canvas {
+    min-width: 100%;
+    height: auto !important;
+}
