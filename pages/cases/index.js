@@ -4,6 +4,23 @@ import Layout from "../../components/Layout";
 
 const caseItems = [
   {
+    name: "Ro Naturcamp",
+    image: "/ronaturcamp.png",
+    link: "/cases/ronaturcamp",
+  },
+  {
+    name: "Lyko Case",
+    image: "/lyko.jpg",
+    logo: "/partners/lyko-logo.png",
+    link: "/cases/lyko",
+  },
+  {
+    name: "Once Upon Case",
+    image: "/onceupon.webp",
+    logo: "/partners/once-upon-logo.png",
+    link: "/cases/onceupon",
+  },
+  {
     name: "Poster Store Case",
     image: "/posterstore.webp",
     logo: "/partners/poster-store-logo.png",
@@ -14,18 +31,6 @@ const caseItems = [
     image: "/sport24.jpg",
     logo: "/partners/sport24-logo.png",
     link: "/cases/sport24",
-  },
-  {
-    name: "Once Upon Case",
-    image: "/onceupon.webp",
-    logo: "/partners/once-upon-logo.png",
-    link: "/cases/onceupon",
-  },
-  {
-    name: "Lyko Case",
-    image: "/lyko.jpg",
-    logo: "/partners/lyko-logo.png",
-    link: "/cases/lyko",
   },
 ];
 

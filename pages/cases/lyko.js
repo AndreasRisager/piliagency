@@ -1,3 +1,4 @@
+import Image from "next/image";
 import CaseIcon from "../../components/CaseIcon";
 import CTA from "../../components/CTA";
 import Layout from "../../components/Layout";
@@ -16,6 +17,11 @@ export default function lyko() {
             skønhedsprodukter.
           </p>
         </div>
+        <Image
+          src={heroImage}
+          alt="Lyko"
+          className="min-w-full max-h-[40rem] object-cover"
+        />
         <div className="max-w-7xl mx-auto my-32">
           <h2 className="text-3xl md:text-4xl font-serif mb-8">
             Resultater fra vores samarbejde

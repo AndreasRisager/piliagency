@@ -77,6 +77,31 @@ const creatorItems = [
     ],
   },
   {
+    name: "Rasmus Andersen",
+    image: "/creators/rasmus_andersen.jpg",
+    texts: [
+      "Autencitet, humør, ægthed, kvalitet og gode oplevelser er nøgleordene i mit liv.",
+      "Han er til daglig alenefar min lille hund Bo, og de gør et ihærdigt forsøg på, at få det bedste ud af livet.",
+      "Han har en bred skarre af interesser, han elsker nemlig alt fra mode, indretning, oplevelser og god mad.",
+      "Han har været med I Tv2 programmet Sommerdrømme og er aktuel i Bachelorette.",
+      "Hans force er helt klart, at han er 100 procent sig selv, og ikke er bange for at dele ud af livets op- og nedture, hvilket gør at hans SoMe kanaler er meget autentiske.",
+      "Han har også en forkærlighed for TikTik hvor han deler ud af sin hverdag - allerhelst på en humoristisk måde.",
+      "Han brænder for at arbejde med unge mennesker, og er ikke bleg for at italesætte svære emner såsom mobning, ensomhed og uddannelsesvalg.",
+    ],
+    socials: [
+      {
+        platform: "Instagram",
+        name: "@fartilbo",
+        link: "https://www.instagram.com/fartilbo/",
+      },
+      {
+        platform: "Tiktok",
+        name: "@fartilbo",
+        link: "https://www.tiktok.com/@fartilbo",
+      },
+    ],
+  },
+  {
     name: "Kristine Melgaard-Mani",
     image: "/creators/kristine_melgaard-mani.jpg",
     tags: ["økonomi", "opskrifter", "familie", "oplevelser"],
@@ -233,8 +258,8 @@ const creatorItems = [
         link: "https://instagram.com/officialmalene/",
       },
       {
-        platform: "Malene Østergaard",
-        name: "piliagency1448",
+        platform: "Mediakit",
+        name: "Malene Østergaard",
         link: "https://booking.bloggersdelight.dk/widgets/offer?offer=r0qeC&p=piliagency1448",
       },
     ],
