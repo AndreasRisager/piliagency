@@ -1,9 +1,10 @@
 import { useState } from "react";
 import Image from "next/image";
+import Carousel from "./Carousel";
 
 export default function Creator({
   name,
-  image,
+  images = [],
   tags = [],
   texts,
   lines,
@@ -14,16 +15,19 @@ export default function Creator({
 
   return (
     <article className="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div>
-        <Image
-          width="500"
-          height="500"
-          src={image}
-          alt={name}
-          className="rounded-2xl"
-          priority={priority}
-        />
-      </div>
+      <Carousel autoSlide={true}>
+        {images.map((image, i) => (
+          <Image
+            width="500"
+            height="500"
+            src={image}
+            alt={name}
+            className="min-w-full object-cover"
+            priority={priority}
+            key={image}
+          />
+        ))}
+      </Carousel>
       <div>
         <h2 className="text-4xl text-gray-900 capitalize">{name}</h2>
         <ul

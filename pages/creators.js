@@ -5,7 +5,12 @@ import Layout from "../components/Layout";
 const creatorItems = [
   {
     name: "Anna David",
-    image: "/creators/anna_david.jpg",
+    images: [
+      "/creators/anna_david/anna_david.jpg",
+      "/creators/anna_david/anna_david-2.jpg",
+      "/creators/anna_david/anna_david-3.jpg",
+      "/creators/anna_david/anna_david-4.jpg",
+    ],
     tags: ["Familie", "Oplevelser", "Livsstil", "Musik", "Natur"],
     texts: [
       "Kunstner Anna David er kendt som en fremragende sanger og sangskriver, som formår at bjergtage sit publikum med sin musik og sprøde smukke stemme.",
@@ -33,7 +38,7 @@ const creatorItems = [
   },
   {
     name: "Mette Sommer",
-    image: "/creators/mette_sommer.jpg",
+    images: ["/creators/mette_sommer/mette_sommer.jpg"],
     tags: ["Natur", "Oplevelser", "Socialt Liv", "Livsstil"],
     texts: [
       "Mettes profil er blevet taget med storm, netop på grund af hendes uopstillede profil, som tager sine følgere med i et ærligt og troværdigt univers.",
@@ -56,7 +61,7 @@ const creatorItems = [
   },
   {
     name: "Anne Bertram",
-    image: "/creators/anne_bertram.jpg",
+    images: ["/creators/anne_bertram/anne_bertram.jpg"],
     tags: ["Sport", "Familie", "Beauty", "Livsstil", "Mode"],
     texts: [
       "Anne Bertram er 33 år, født og opvokset på fyn men har været bosat i København de sidste 10 år. Hun har 2 dejlige drenge på 1 og 4 år, som hun har sammen med sin kæreste Kim. De har bosat sig i Løkken efter 10 år i København, da de trængte til familie omkring sig, vand, strand, skov og ro.",
@@ -78,7 +83,7 @@ const creatorItems = [
   },
   {
     name: "Rasmus Andersen",
-    image: "/creators/rasmus_andersen.jpg",
+    images: ["/creators/rasmus_andersen/rasmus_andersen.jpg"],
     texts: [
       "Autencitet, humør, ægthed, kvalitet og gode oplevelser er nøgleordene i mit liv.",
       "Han er til daglig alenefar min lille hund Bo, og de gør et ihærdigt forsøg på, at få det bedste ud af livet.",
@@ -103,7 +108,7 @@ const creatorItems = [
   },
   {
     name: "Kristine Melgaard-Mani",
-    image: "/creators/kristine_melgaard-mani.jpg",
+    images: ["/creators/kristine_melgaard-mani/kristine_melgaard-mani.jpg","/creators/kristine_melgaard-mani/kristine_melgaard-mani-2.jpg","/creators/kristine_melgaard-mani/kristine_melgaard-mani-3.jpg"],
     tags: ["økonomi", "opskrifter", "familie", "oplevelser"],
     texts: [
       "Kristine er kendt for at dele økonomiske tips, madplaner, opskrifter og oplevelser for familien - alt sammen med et ønske om, at hjælpe andre til at få et bedre økonomisk overblik.",
@@ -125,7 +130,7 @@ const creatorItems = [
   },
   {
     name: "Sanne Natasha",
-    image: "/creators/sanne_natasha.jpg",
+    images: ["/creators/sanne_natasha/sanne_natasha.jpg"],
     tags: [
       "Familie",
       "Elsker at lave sjove og releterbar reels",
@@ -158,7 +163,7 @@ const creatorItems = [
   },
   {
     name: "Line Dupont",
-    image: "/creators/line_dupont.jpg",
+    images: ["/creators/line_dupont/line_dupont.jpg", "/creators/line_dupont/line_dupont-2.jpg", "/creators/line_dupont/line_dupont-3.jpg", "/creators/line_dupont/line_dupont-4.jpg", "/creators/line_dupont/line_dupont-5.jpg", "/creators/line_dupont/line_dupont-6.jpg", "/creators/line_dupont/line_dupont-7.jpg"],
     tags: [
       "Familie",
       "DIY",
@@ -189,7 +194,7 @@ const creatorItems = [
   },
   {
     name: "Simone Lykke",
-    image: "/creators/simone_lykke.jpg",
+    images: ["/creators/simone_lykke/simone_lykke.jpg", "/creators/simone_lykke/simone_lykke-2.jpg", "/creators/simone_lykke/simone_lykke-3.jpg", "/creators/simone_lykke/simone_lykke-4.jpg"],
     tags: ["Vegan", "Interior", "Bæredygtig", "Familie", "Sorg og Angst"],
     texts: [
       "Simone Lykke slog for alvor igennem i 2016 i den anmelderroste danske biograffilm Hundeliv.",
@@ -214,7 +219,7 @@ const creatorItems = [
   },
   {
     name: "Lisbeth Vernsted Fabricius",
-    image: "/creators/lisbeth_fabricius.jpg",
+    images: ["/creators/lisbeth_fabricius/lisbeth_fabricius.jpg", "/creators/lisbeth_fabricius/lisbeth_fabricius-2.jpg", "/creators/lisbeth_fabricius/lisbeth_fabricius-3.jpg", "/creators/lisbeth_fabricius/lisbeth_fabricius-4.jpg", "/creators/lisbeth_fabricius/lisbeth_fabricius-5.jpg", "/creators/lisbeth_fabricius/lisbeth_fabricius-6.jpg"],
     tags: [
       "Familie",
       "Angst",
@@ -243,7 +248,7 @@ const creatorItems = [
   },
   {
     name: "Malene Østergaard",
-    image: "/creators/malene_ostergaard.jpg",
+    images: ["/creators/malene_ostergaard/malene_ostergaard.jpg","/creators/malene_ostergaard/malene_ostergaard-2.jpg","/creators/malene_ostergaard/malene_ostergaard-3.jpg","/creators/malene_ostergaard/malene_ostergaard-4.jpg","/creators/malene_ostergaard/malene_ostergaard-5.jpg","/creators/malene_ostergaard/malene_ostergaard-6.jpg","/creators/malene_ostergaard/malene_ostergaard-7.jpg","/creators/malene_ostergaard/malene_ostergaard-8.jpg","/creators/malene_ostergaard/malene_ostergaard-9.jpg","/creators/malene_ostergaard/malene_ostergaard-10.jpg","/creators/malene_ostergaard/malene_ostergaard-11.jpg"],
     tags: ["Vild Med Dans", "Mode", "Beauty", "Mor til 2", "Livsstil"],
     texts: [
       "Malene er 34 år, bor i en lejlighed på Islands Brygge og elsker livet som mor. Sammen med hendes mand Christian har hun drengene William og Oliver på 3 og 5år.",
