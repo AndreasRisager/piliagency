@@ -259,23 +259,6 @@ const creatorItems = [
 		],
 	},
 	{
-		name: "Anne Bertram",
-		images: ["/creators/anne_bertram/anne_bertram.jpg"],
-		tags: ["Sport", "Familie", "Beauty", "Livsstil", "Mode"],
-		texts: [
-			"Anne Bertram er 33 år, født og opvokset på fyn men har været bosat i København de sidste 10 år. Hun har 2 dejlige drenge på 1 og 4 år, som hun har sammen med sin kæreste Kim. De har bosat sig i Løkken efter 10 år i København, da de trængte til familie omkring sig, vand, strand, skov og ro.",
-			"Hun spiller håndbold, elsker at male , at løbe og hun elsker at lave velgørenhed og meget gerne med fokus på børn.",
-			"Hendes gode data afspejler at hendes profil er helt unik og at hun formår at engagere sig med sine følger. Det kan især ses i hendes høje ENGAGEMENT RATE på 5,78% og hendes flotte rækkevidde. Anne Bertram er kommercielt interesant for Beauty og Tøj virksomheder samt virksomheder som henvender sig til familielivet.",
-		],
-		socials: [
-			{
-				platform: "Instagram",
-				name: "@annebertram",
-				link: "https://www.instagram.com/annebertram/",
-			},
-		],
-	},
-	{
 		name: "Kristine Melgaard-Mani",
 		images: [
 			"/creators/kristine_melgaard-mani/kristine_melgaard-mani.jpg",
