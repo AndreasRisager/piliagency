@@ -5,8 +5,8 @@ import Image from "next/image";
 
 export default function Hero({ block }) {
 	return (
-		<section className="flex flex-col items-center p-4 mt-12 mb-24">
-			<div className="max-w-7xl mx-auto px-4 text-center">
+		<section className="flex flex-col px-4 items-center mt-16 mb-24">
+			<div className="max-w-7xl mx-auto text-center">
 				<h1 className="text-[2.7rem] leading-none font-serif font-medium mb-4 text-gray-700 md:text-5xl lg:text-6xl xl:text-7xl">
 					{block?.title}
 				</h1>
@@ -34,10 +34,10 @@ export default function Hero({ block }) {
 					<figure className="mt-20">
 						<Image
 							key={block._key}
-							src={urlForImage(block.image).url()}
+							src={urlForImage(block.image).width(1280).height(720).url()}
 							priority
-							width={1920}
-							height={1080}
+							width={1280}
+							height={720}
 							alt={block.image.asset.altText || "hero"}
 							className="object-cover"
 							placeholder={block.image.asset.metadata?.lqip ? "blur" : "empty"}

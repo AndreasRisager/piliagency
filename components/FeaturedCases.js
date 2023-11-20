@@ -82,18 +82,17 @@ export default function FeaturedCases({ block }) {
 							animate={{
 								x: `calc(-${current * 100}% - ${current}rem)`,
 							}}>
-							{[...block.cases].map((slide, index) => (
+							{[...block.cases].map((slide) => (
 								<div className="shrink-0 basis-full relative" key={slide._id}>
 									<Link href={"/cases/" + slide.slug.current}>
 										<Image
 											key={slide._id}
 											src={urlForImage(slide.thumbnail)
-												.width(1600)
-												.height(900)
+												.width(1280)
+												.height(720)
 												.url()}
-											priority={index === 0}
-											width={1600}
-											height={900}
+											width={1280}
+											height={720}
 											alt={slide.thumbnail.asset.altText || "featured case"}
 											className="aspect-video object-cover"
 											placeholder={
