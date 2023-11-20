@@ -1,34 +1,26 @@
 import Image from "next/image";
 import Link from "next/link";
+import { urlForImage } from "../sanity/lib/image";
 
-export default function CaseCard({ name, image, logo = "", link }) {
-  return (
-    <div className="rounded-xl overflow-hidden group w-full min-h-[300px]">
-      <Link href={link || "/cases"} className="block h-full">
-        <span className="sr-only">{name} Case</span>
-        <div className="grid items-center justify-items-center relative h-full">
-          <Image
-            fill
-            src={image}
-            alt={name + " Case"}
-            quality={50}
-            className="col-span-full row-span-full object-cover"
-            priority
-          />
-          {logo && (
-            <div className="col-span-full row-span-full m-[8%]">
-              <Image
-                width="180"
-                height="180"
-                src={logo}
-                alt={name + " logo"}
-                className="brightness-0 invert"
-                priority
-              />
-            </div>
-          )}
-        </div>
-      </Link>
-    </div>
-  );
+export default function CaseCard({ title, slug, thumbnail }) {
+	return (
+		<Link href={"/cases/" + slug.current} className="group w-full h-full">
+			<figure
+				className={`group-hover:ring ring-black ring-offset-1 rounded-[4px] transition-all h-[227px] bg-beige overflow-hidden`}>
+				{thumbnail?.asset && (
+					<Image
+						width={403}
+						height={227}
+						src={urlForImage(thumbnail).width(403).height(227).url()}
+						alt={thumbnail.alt + " - " + title || title}
+						className={`object-cover w-full h-full bg-beige`}
+						placeholder={thumbnail.asset.metadata?.lqip ? "blur" : "empty"}
+						blurDataURL={thumbnail.asset.metadata?.lqip}
+						priority
+					/>
+				)}
+			</figure>
+			<p className="text-black text-center md:text-lg my-2">{title}</p>
+		</Link>
+	);
 }

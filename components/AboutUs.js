@@ -1,52 +1,29 @@
-import { useContext, useRef } from "react";
-import { ScrollContext } from "../utils/scroll-observer";
+import Image from "next/image";
+import React from "react";
+import Balancer from "react-wrap-balancer";
+import { urlForImage } from "../sanity/lib/image";
 
-const opacityForBlock = (sectionProgress, blockNo) => {
-  const progress = sectionProgress - blockNo;
-  if (progress >= 0 && progress < 1) return 1;
-  return 0.2;
-};
-
-export default function AboutUs() {
-  const { scrollY } = useContext(ScrollContext);
-  const refContainer = useRef(null);
-
-  const numOfPages = 3;
-  let progress = 0;
-
-  const { current: elContainer } = refContainer;
-  if (elContainer) {
-    const { clientHeight, offsetTop } = elContainer;
-    const screenH = window.innerHeight;
-    const halfH = screenH / 2;
-    const percentY =
-      Math.min(clientHeight + halfH, Math.max(-screenH, scrollY - offsetTop) + halfH) /
-      clientHeight;
-    progress = Math.min(numOfPages - 0.5, Math.max(0.5, percentY * numOfPages));
-  }
-
-  return (
-    <section ref={refContainer} className="bg-gray-50 text-gray-900" id="om">
-      <div className="min-h-screen max-w-5xl mx-auto px-10 lg:px-20 py-24 md:py-28 lg:py-36 flex flex-col justify-center items-center text-4xl md:text-6xl lg:text-7xl tracking-tight font-semibold">
-        <div className="leading-[1.15]">
-          <p
-            className="transition-opacity duration-500"
-            style={{ opacity: opacityForBlock(progress, 0) }}>
-            Vi har over 5 års erfaring med influencer marketing og kommunikation.
-          </p>
-          <p
-            className="transition-opacity duration-500 my-4"
-            style={{ opacity: opacityForBlock(progress, 1) }}>
-            Med vores erfaring og flere år i branchen har vi et solidt netværk i branchen.
-          </p>
-          <p
-            className="transition-opacity duration-500"
-            style={{ opacity: opacityForBlock(progress, 2) }}>
-            Vores udvalg af dygtige og kreative influenter sikrer, at dit budskab når frem til netop
-            jeres målgrupper.
-          </p>
-        </div>
-      </div>
-    </section>
-  );
+export default function AboutUs({ block }) {
+	return (
+		<section className="max-w-7xl mx-auto my-32" id="om">
+			<Image
+				src={urlForImage(block?.image).width(1280).url()}
+				width={1280}
+				height={800}
+				className="w-full max-h-[800px] object-cover"
+				placeholder={block.image.asset.metadata?.lqip ? "blur" : "empty"}
+				blurDataURL={block.image.asset.metadata?.lqip}
+			/>
+			<div className="px-4 py-20 max-w-4xl mx-auto text-center -mt-32">
+				<div className="bg-white rounded-md p-8 supports-[backdrop-filter]:bg-white/90 supports-[backdrop-filter]:backdrop-blur-sm">
+					<h2 className="text-4xl lg:text-5xl lg:leading-tight leading-tight font-medium text-gray-800 mb-3">
+						<Balancer>{block?.title}</Balancer>
+					</h2>
+					<p className="text-gray-600 leading-8 text-xl">
+						{block?.description}
+					</p>
+				</div>
+			</div>
+		</section>
+	);
 }
