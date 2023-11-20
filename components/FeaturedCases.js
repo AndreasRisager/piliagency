@@ -26,12 +26,15 @@ export default function FeaturedCases({ block }) {
 
 	return (
 		<section
-			className="overflow-hidden"
+			className="overflow-hidden mb-32"
 			onMouseEnter={() => setAutoSlide(false)}
 			onMouseLeave={() => setAutoSlide(true)}>
 			<div className="flex flex-col items-center justify-between mx-8">
 				<MotionConfig transition={{ duration: 0.7, ease: [0.32, 0.72, 0, 1] }}>
-					<div className="relative w-full max-w-[1600px] flex items-center">
+					{block.title && (
+						<h3 className="text-4xl mb-6 max-w-7xl mx-auto">{block.title}</h3>
+					)}
+					<div className="relative w-full max-w-7xl flex items-center">
 						{/* Left/right controls */}
 
 						<div className="absolute left-0 right-0 flex justify-between z-10 pointer-events-none">

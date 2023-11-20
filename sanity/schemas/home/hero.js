@@ -18,16 +18,26 @@ export const hero = {
 			type: "string",
 			validation: (Rule) => Rule.required(),
 		},
+		{
+			name: "image",
+			title: "image",
+			type: "image",
+			options: {
+				hotspot: true,
+			},
+		},
 	],
 	preview: {
 		select: {
 			title: "title",
 			subtitle: "description",
+			media: "image",
 		},
-		prepare({ title, subtitle }) {
+		prepare({ media, title, subtitle }) {
 			return {
 				title,
 				subtitle: "[Hero] - " + subtitle,
+				media,
 			};
 		},
 	},

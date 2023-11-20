@@ -7,6 +7,11 @@ export const featuredCases = {
 	icon: InlineElementIcon,
 	fields: [
 		{
+			type: "string",
+			name: "title",
+			title: "Title",
+		},
+		{
 			type: "array",
 			name: "cases",
 			title: "Featured Cases",
