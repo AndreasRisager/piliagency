@@ -93,6 +93,10 @@ export default function FeaturedCases({ block }) {
 											height={900}
 											alt={slide.thumbnail.asset.altText || "featured case"}
 											className="aspect-video object-cover"
+											placeholder={
+												slide.thumbnail.asset.metadata?.lqip ? "blur" : "empty"
+											}
+											blurDataURL={slide.thumbnail.asset.metadata?.lqip}
 										/>
 										<p className="text-5xl absolute bottom-2 left-2 text-white">
 											{slide.title}
