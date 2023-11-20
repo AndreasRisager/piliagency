@@ -4,7 +4,6 @@
 import { defineConfig } from "sanity";
 import { deskTool } from "sanity/desk";
 import { unsplashImageAsset } from "sanity-plugin-asset-source-unsplash";
-import { lighthousePlugin } from "sanity-lighthouse-plugin";
 import { media } from "sanity-plugin-media";
 
 // Go to https://www.sanity.io/docs/api-versioning to learn how API versioning works
@@ -44,6 +43,5 @@ export default defineConfig({
 		}),
 		media(),
 		unsplashImageAsset(),
-		lighthousePlugin(),
 	],
 });
