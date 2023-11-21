@@ -34,7 +34,7 @@ export default function CreatorPage({ creator }) {
 							/>
 						))}
 					</div>
-					<div className="lg:col-span-2 relative">
+					<div className="lg:col-span-2 relative overflow-hidden">
 						{creator.tags && (
 							<div className="flex flex-nowrap whitespace-nowrap space-x-7 overflow-x-auto pb-2 border-b no-scrollbar">
 								{creator.tags.map((tag) => (

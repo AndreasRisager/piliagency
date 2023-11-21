@@ -45,20 +45,20 @@ export default function Partners({ partners }) {
 					</p>
 				</div>
 				<InfiniteScroll
-					className="grid grid-cols-[repeat(auto-fill,_208px)] gap-2 justify-center"
+					className="flex flex-wrap gap-2 justify-center"
 					dataLength={images.length}
 					next={getMoreImages}
 					hasMore={images.length !== partners.imageCount}
 					loader={<p className="text-center">Loading...</p>}>
 					{images?.map((image) => (
 						<figure
-							className="border hover:shadow h-52 flex items-center justify-center p-4 rounded-md"
+							className="border hover:shadow h-52 flex items-center justify-center p-4 rounded-md basis-[200px] shrink-0"
 							key={image._key}>
 							<Image
-								src={image.asset && urlForImage(image).width(208).url()}
+								src={image.asset && urlForImage(image).width(200).url()}
 								alt={image.asset.altText ?? "partner"}
-								height={208}
-								width={208}
+								height={200}
+								width={200}
 								placeholder={image.asset.metadata?.lqip ? "blur" : "empty"}
 								blurDataURL={image.asset.metadata?.lqip}
 								className="rounded-sm h-full w-full object-contain"
