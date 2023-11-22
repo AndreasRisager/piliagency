@@ -15,7 +15,7 @@ export default function CreatorPage({ creator }) {
 			title={creator?.name}
 			image={urlForImage(creator?.images?.[0]).url()}>
 			<main className="max-w-7xl w-screen mx-auto px-4 md:mt-12 mb-20">
-				<div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
 					<div
 						className={`lg:col-span-3 ${
 							creator?.images.length > 1 && "columns-2 space-y-4"
@@ -34,19 +34,21 @@ export default function CreatorPage({ creator }) {
 							/>
 						))}
 					</div>
-					<div className="lg:col-span-2 relative overflow-hidden">
+					<div className="lg:col-span-2 relative">
 						{creator.tags && (
-							<div className="flex flex-nowrap whitespace-nowrap space-x-7 overflow-x-auto pb-2 border-b no-scrollbar">
-								{creator.tags.map((tag) => (
-									<ul
-										className="first-of-type:list-none list-item list-disc list"
-										key={tag}>
-										{tag}
-									</ul>
-								))}
+							<div className="overflow-hidden w-full">
+								<ul className="flex flex-nowrap whitespace-nowrap space-x-7 overflow-x-auto pb-2 border-b no-scrollbar">
+									{creator.tags.map((tag) => (
+										<li
+											className="first-of-type:list-none list-item list-disc list"
+											key={tag}>
+											{tag}
+										</li>
+									))}
+								</ul>
 							</div>
 						)}
-						<div className="pt-5 pb-4 sticky top-[72px] bg-white supports-[backdrop-filter]:bg-white/90 supports-[backdrop-filter]:backdrop-blur-sm">
+						<div className="pt-5 pb-4 lg:sticky top-[72px] bg-white supports-[backdrop-filter]:bg-white/90 supports-[backdrop-filter]:backdrop-blur-sm">
 							<h1 className="text-[2.5rem] leading-none tracking-wide font-light">
 								{creator.name}
 							</h1>
