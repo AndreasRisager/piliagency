@@ -48,7 +48,7 @@ export default function CreatorPage({ creator }) {
 								</ul>
 							</div>
 						)}
-						<div className="pt-5 pb-4 lg:sticky top-[72px] bg-white supports-[backdrop-filter]:bg-white/90 supports-[backdrop-filter]:backdrop-blur-sm">
+						<div className="pt-5 pb-4 sticky top-[72px] bg-white supports-[backdrop-filter]:bg-white/90 supports-[backdrop-filter]:backdrop-blur-sm">
 							<h1 className="text-[2.5rem] leading-none tracking-wide font-light">
 								{creator.name}
 							</h1>
