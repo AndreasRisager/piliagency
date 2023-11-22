@@ -37,7 +37,7 @@ export default function Partners({ partners }) {
 		<Layout title="Partners">
 			<main className="max-w-7xl mx-auto px-4 mb-20">
 				<div className="mt-12 mb-24 text-center max-w-4xl mx-auto">
-					<h1 className="text-[2.7rem] leading-none font-serif font-medium mb-4 text-gray-700 md:text-5xl lg:text-6xl xl:text-7xl">
+					<h1 className="text-[2.7rem] leading-none font-serif font-medium mb-4 text-gray-700 md:text-5xl lg:text-6xl xl:text-7xl break-words">
 						{partners.title}
 					</h1>
 					<p className="text-lg text-gray-500 sm:max-w-md md:max-w-3xl mx-auto md:text-xl lg:text-2xl">
@@ -52,7 +52,7 @@ export default function Partners({ partners }) {
 					loader={<p className="text-center">Loading...</p>}>
 					{images?.map((image) => (
 						<figure
-							className="border hover:shadow h-52 flex items-center justify-center p-4 rounded-md basis-[200px] shrink-0"
+							className="border hover:shadow flex items-center justify-center p-4 rounded-md aspect-square basis-[calc(50%-0.5rem)] sm:basis-[200px] shrink-0"
 							key={image._key}>
 							<Image
 								src={image.asset && urlForImage(image).width(200).url()}
@@ -61,7 +61,7 @@ export default function Partners({ partners }) {
 								width={200}
 								placeholder={image.asset.metadata?.lqip ? "blur" : "empty"}
 								blurDataURL={image.asset.metadata?.lqip}
-								className="rounded-sm h-full w-full object-contain"
+								className="rounded-sm aspect-square object-contain"
 							/>
 						</figure>
 					))}

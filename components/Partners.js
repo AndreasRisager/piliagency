@@ -8,7 +8,9 @@ export default function Partners({ block }) {
 	return (
 		<section className="max-w-7xl mx-auto px-4 my-32">
 			<div className="max-w-4xl mx-auto text-center mb-8">
-				<h2 className="text-3xl font-medium uppercase">{block?.title}</h2>
+				<h2 className="text-3xl font-medium uppercase break-words">
+					{block?.title}
+				</h2>
 				<Balancer>
 					<PortableText
 						value={block?.description}

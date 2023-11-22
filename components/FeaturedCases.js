@@ -29,7 +29,7 @@ export default function FeaturedCases({ block }) {
 			className="overflow-hidden mb-32"
 			onMouseEnter={() => setAutoSlide(false)}
 			onMouseLeave={() => setAutoSlide(true)}>
-			<div className="flex flex-col items-center justify-between mx-8">
+			<div className="flex flex-col items-center justify-between mx-4 md:mx-8">
 				<MotionConfig transition={{ duration: 0.7, ease: [0.32, 0.72, 0, 1] }}>
 					{block.title && (
 						<h3 className="text-4xl mb-6 max-w-7xl mx-auto">{block.title}</h3>
@@ -40,9 +40,9 @@ export default function FeaturedCases({ block }) {
 						<div className="absolute left-0 right-0 flex justify-between z-10 pointer-events-none">
 							<button
 								onClick={onPrevClick}
-								className="pointer-events-auto md:p-8 cursor-default">
+								className="pointer-events-auto p-4 md:p-8 cursor-default">
 								<svg
-									className="w-8 h-8 text-white"
+									className="w-5 h-5 md:w-8 md:h-8 text-white"
 									aria-hidden="true"
 									xmlns="http://www.w3.org/2000/svg"
 									fill="none"
@@ -58,9 +58,9 @@ export default function FeaturedCases({ block }) {
 							</button>
 							<button
 								onClick={onNextClick}
-								className="pointer-events-auto md:p-8 cursor-default">
+								className="pointer-events-auto p-4 md:p-8 cursor-default">
 								<svg
-									className="w-8 h-8 text-white"
+									className="w-5 h-5 md:w-8 md:h-8 text-white"
 									aria-hidden="true"
 									xmlns="http://www.w3.org/2000/svg"
 									fill="none"
@@ -78,9 +78,9 @@ export default function FeaturedCases({ block }) {
 
 						{/* List of images */}
 						<motion.div
-							className="flex gap-4 flex-nowrap"
+							className="flex gap-2 flex-nowrap"
 							animate={{
-								x: `calc(-${current * 100}% - ${current}rem)`,
+								x: `calc(-${current * 100}% - ${current * 0.5}rem)`,
 							}}>
 							{[...block.cases].map((slide) => (
 								<div className="shrink-0 basis-full relative" key={slide._id}>
@@ -94,13 +94,13 @@ export default function FeaturedCases({ block }) {
 											width={1280}
 											height={720}
 											alt={slide.thumbnail.asset.altText || "featured case"}
-											className="aspect-video object-cover"
+											className="aspect-video object-cover rounded-md"
 											placeholder={
 												slide.thumbnail.asset.metadata?.lqip ? "blur" : "empty"
 											}
 											blurDataURL={slide.thumbnail.asset.metadata?.lqip}
 										/>
-										<p className="text-5xl absolute bottom-2 left-2 text-white">
+										<p className="text-2xl md:text-5xl absolute bottom-2 left-2 text-white">
 											{slide.title}
 										</p>
 									</Link>
