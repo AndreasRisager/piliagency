@@ -95,5 +95,5 @@ export async function getStaticProps({ params: { slug } }) {
     `;
 	const caseItem = await client.fetch(query, { slug });
 
-	return { props: { caseItem }, revalidate: 60 };
+	return { props: { caseItem }, revalidate: 30 };
 }

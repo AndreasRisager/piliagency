@@ -115,5 +115,5 @@ export async function getStaticProps({ params: { slug } }) {
     `;
 	const creator = await client.fetch(query, { slug });
 
-	return { props: { creator }, revalidate: 60 };
+	return { props: { creator }, revalidate: 30 };
 }
