@@ -47,5 +47,5 @@ const query = groq`
 export async function getStaticProps() {
 	const creatorItems = await client.fetch(query);
 
-	return { props: { creatorItems } };
+	return { props: { creatorItems }, revalidate: 60 };
 }
