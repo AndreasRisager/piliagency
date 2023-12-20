@@ -91,8 +91,6 @@ export async function getStaticProps({ params: { slug } }) {
 				},
 			},
 		},
-		"previousCase": *[_type == "cases" && ^._createdAt > _createdAt]|order(_createdAt desc)[0]{name, images, "slug": slug.current},
-    	"nextCase": *[_type == "cases" && ^._createdAt < _createdAt]|order(_createdAt asc)[0]{name, images, "slug": slug.current}
     }
     `;
 	const caseItem = await client.fetch(query, { slug });

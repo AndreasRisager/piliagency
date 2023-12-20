@@ -56,5 +56,5 @@ const query = groq`
 export async function getStaticProps() {
 	const caseItems = await client.fetch(query);
 
-	return { props: { caseItems } };
+	return { props: { caseItems }, revalidate: 60 };
 }
