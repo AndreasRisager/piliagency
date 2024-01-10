@@ -8,8 +8,15 @@ import { urlForImage } from "../../sanity/lib/image";
 import { PortableText } from "@portabletext/react";
 import { RichTextComponents } from "../../components/RichTextComponents";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function CreatorPage({ creator }) {
+	const router = useRouter();
+
+	if (router.isFallback) {
+		return <div>Loading...</div>;
+	}
+
 	return (
 		<Layout
 			title={creator?.name}
