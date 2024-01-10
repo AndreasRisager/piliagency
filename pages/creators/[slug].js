@@ -13,7 +13,9 @@ export default function CreatorPage({ creator }) {
 	return (
 		<Layout
 			title={creator?.name}
-			image={urlForImage(creator?.images?.[0]).url()}>
+			image={
+				creator?.images?.[0] ? urlForImage(creator?.images?.[0]).url() : ""
+			}>
 			<main className="max-w-7xl w-screen mx-auto px-4 md:mt-12 mb-20">
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
 					<div
@@ -35,7 +37,7 @@ export default function CreatorPage({ creator }) {
 						))}
 					</div>
 					<div className="lg:col-span-2 relative">
-						{creator.tags && (
+						{creator?.tags && (
 							<div className="overflow-hidden w-full">
 								<ul className="flex flex-nowrap whitespace-nowrap space-x-7 overflow-x-auto pb-2 border-b no-scrollbar">
 									{creator.tags.map((tag) => (
@@ -50,7 +52,7 @@ export default function CreatorPage({ creator }) {
 						)}
 						<div className="pt-5 pb-4 sticky top-[72px] bg-white supports-[backdrop-filter]:bg-white/90 supports-[backdrop-filter]:backdrop-blur-sm">
 							<h1 className="text-[2.5rem] leading-none tracking-wide font-light">
-								{creator.name}
+								{creator?.name}
 							</h1>
 							{creator?.instagram && (
 								<p className="font-light text-neutral-600">
@@ -65,7 +67,10 @@ export default function CreatorPage({ creator }) {
 								</p>
 							)}
 						</div>
-						<PortableText value={creator.bio} components={RichTextComponents} />
+						<PortableText
+							value={creator?.bio}
+							components={RichTextComponents}
+						/>
 					</div>
 				</div>
 			</main>
@@ -94,12 +99,6 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { slug } }) {
-	if (!slug) {
-		return {
-			notFound: true,
-		};
-	}
-
 	const query = groq`
     *[_type=='creators' && slug.current == $slug][0] {
         ...,
@@ -120,6 +119,12 @@ export async function getStaticProps({ params: { slug } }) {
     }
     `;
 	const creator = await client.fetch(query, { slug });
+
+	if (!creator) {
+		return {
+			notFound: true,
+		};
+	}
 
 	return { props: { creator }, revalidate: 30 };
 }

@@ -10,7 +10,7 @@ export default function CasePage({ caseItem }) {
 	return (
 		<Layout
 			title={caseItem?.title}
-			image={caseItem.thumbnail && urlForImage(caseItem.thumbnail).url()}>
+			image={caseItem?.thumbnail ? urlForImage(caseItem.thumbnail).url() : ""}>
 			<main className="max-w-[1920px] w-screen mx-auto px-4 overflow-hidden">
 				{caseItem?.pageBuilder?.map((block, index) => (
 					<PageBuilder block={block} key={block._key || index} />
@@ -41,11 +41,6 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { slug } }) {
-	if (!slug) {
-		return {
-			notFound: true,
-		};
-	}
 	const query = groq`
     *[_type=='cases' && slug.current == $slug][0] {
         ...,
@@ -99,6 +94,12 @@ export async function getStaticProps({ params: { slug } }) {
     }
     `;
 	const caseItem = await client.fetch(query, { slug });
+
+	if (!caseItem) {
+		return {
+			notFound: true,
+		};
+	}
 
 	return { props: { caseItem }, revalidate: 30 };
 }
