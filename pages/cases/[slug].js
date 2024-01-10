@@ -5,15 +5,8 @@ import { groq } from "next-sanity";
 import { client } from "../../sanity/lib/client";
 import { urlForImage } from "../../sanity/lib/image";
 import PageBuilder from "../../components/PageBuilder";
-import { useRouter } from "next/router";
 
 export default function CasePage({ caseItem }) {
-	const router = useRouter();
-
-	if (router.isFallback) {
-		return <div>Loading...</div>;
-	}
-
 	return (
 		<Layout
 			title={caseItem?.title}
