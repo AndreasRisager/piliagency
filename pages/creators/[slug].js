@@ -94,6 +94,12 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { slug } }) {
+	if (!slug) {
+		return {
+			notFound: true,
+		};
+	}
+
 	const query = groq`
     *[_type=='creators' && slug.current == $slug][0] {
         ...,
