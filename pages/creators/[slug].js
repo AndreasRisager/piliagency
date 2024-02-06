@@ -79,25 +79,6 @@ export default function CreatorPage({ creator }) {
 	);
 }
 
-export async function getStaticPaths() {
-	const query = groq`
-    *[_type=='creators'] | order(_createdAt desc) {
-        slug,
-    }
-    `;
-	const creators = await client.fetch(query);
-
-	const paths = creators.map((item) => {
-		return {
-			params: { slug: `${item.slug.current}` },
-		};
-	});
-	return {
-		paths,
-		fallback: true,
-	};
-}
-
 export async function getStaticProps({ params: { slug } }) {
 	const query = groq`
     *[_type=='creators' && slug.current == $slug][0] {
@@ -127,4 +108,23 @@ export async function getStaticProps({ params: { slug } }) {
 	}
 
 	return { props: { creator }, revalidate: 30 };
+}
+
+export async function getStaticPaths() {
+	const query = groq`
+    *[_type=='creators'] | order(_createdAt desc) {
+        slug,
+    }
+    `;
+	const creators = await client.fetch(query);
+
+	const paths = creators.map((item) => {
+		return {
+			params: { slug: `${item.slug.current}` },
+		};
+	});
+	return {
+		paths,
+		fallback: true,
+	};
 }

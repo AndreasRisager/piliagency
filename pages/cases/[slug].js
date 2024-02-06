@@ -21,25 +21,6 @@ export default function CasePage({ caseItem }) {
 	);
 }
 
-export async function getStaticPaths() {
-	const query = groq`
-    *[_type=='cases'] | order(_createdAt desc) {
-        slug,
-    }
-    `;
-	const casesItems = await client.fetch(query);
-
-	const paths = casesItems.map((item) => {
-		return {
-			params: { slug: `${item.slug.current}` },
-		};
-	});
-	return {
-		paths,
-		fallback: true,
-	};
-}
-
 export async function getStaticProps({ params: { slug } }) {
 	const query = groq`
     *[_type=='cases' && slug.current == $slug][0] {
@@ -102,4 +83,23 @@ export async function getStaticProps({ params: { slug } }) {
 	}
 
 	return { props: { caseItem }, revalidate: 30 };
+}
+
+export async function getStaticPaths() {
+	const query = groq`
+    *[_type=='cases'] | order(_createdAt desc) {
+        slug,
+    }
+    `;
+	const casesItems = await client.fetch(query);
+
+	const paths = casesItems.map((item) => {
+		return {
+			params: { slug: `${item.slug.current}` },
+		};
+	});
+	return {
+		paths,
+		fallback: true,
+	};
 }
