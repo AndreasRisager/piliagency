@@ -50,21 +50,36 @@ export default function CreatorPage({ creator }) {
 								</ul>
 							</div>
 						)}
-						<div className="pt-5 pb-4 sticky top-[72px] bg-white supports-[backdrop-filter]:bg-white/90 supports-[backdrop-filter]:backdrop-blur-sm">
-							<h1 className="text-[2.5rem] leading-none tracking-wide font-light">
+						<div className="pt-4 pb-4 sticky top-[65px] bg-white supports-[backdrop-filter]:bg-white/90 supports-[backdrop-filter]:backdrop-blur-sm">
+							<h1 className="text-[2.5rem] leading-none tracking-wide font-light pb-2">
 								{creator?.name}
 							</h1>
-							{creator?.instagram && (
-								<p className="font-light text-neutral-600">
-									<Link
-										href={`https://www.instagram.com/${creator?.instagram}/`}
-										target="_blank"
-										rel="noopener">
-										@{creator.instagram}
-									</Link>
-									{creator?.audience?.followers &&
-										`, ${creator.audience.followers} followers`}
-								</p>
+							{creator?.medialinks?.length > 0 && (
+								<div className="flex flex-wrap gap-2">
+									{creator?.medialinks?.map((link, index) => {
+										let imgSrc = "";
+										if (link.icon.svg) {
+											let encodedSvg = encodeURIComponent(link.icon.svg);
+											imgSrc = `data:image/svg+xml,${encodedSvg}`;
+										}
+
+										return (
+											<p
+												className="font-light text-neutral-600 flex-grow-0"
+												key={link._key}>
+												<Link
+													href={link.url}
+													target="_blank"
+													rel="noopener"
+													className="flex gap-1">
+													{imgSrc && <img src={imgSrc} />}
+													{link.text}
+													{creator?.medialinks?.length - 1 !== index && ","}
+												</Link>
+											</p>
+										);
+									})}
+								</div>
 							)}
 						</div>
 						<PortableText

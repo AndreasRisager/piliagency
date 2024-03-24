@@ -3,7 +3,7 @@ import { urlForImage } from "../sanity/lib/image";
 import Link from "next/link";
 
 export default function Creator({
-	item: { index, name, images, instagram, audience, slug },
+	item: { index, name, images, medialinks, slug },
 }) {
 	return (
 		<article className="flex flex-col gap-2 max-w-sm group">
@@ -25,10 +25,9 @@ export default function Creator({
 					<h2 className="text-xl text-neutral-600 capitalize font-light">
 						{name}
 					</h2>
-					{instagram && (
-						<p className="font-light text-sm text-neutral-600">
-							@{instagram}
-							{audience?.followers && `, ${audience.followers} followers`}
+					{medialinks?.[0] && (
+						<p className="font-light text-sm text-neutral-600 flex gap-1">
+							@{medialinks?.[0].text}
 						</p>
 					)}
 				</div>

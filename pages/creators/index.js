@@ -39,7 +39,7 @@ export default function creators({ creatorItems }) {
 
 const query = groq`
   *[_type=='creators'] {
-  name, slug, images, instagram, audience,
+  name, slug, images, medialinks,
   "palette": images[0].asset->metadata.palette.dominant,
 }
 `;

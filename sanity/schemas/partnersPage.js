@@ -4,6 +4,12 @@ export const partnersPage = {
 	type: "document",
 	fields: [
 		{
+			name: "slug",
+			title: "Slug",
+			type: "slug",
+			hidden: true,
+		},
+		{
 			name: "title",
 			title: "Title",
 			type: "string",

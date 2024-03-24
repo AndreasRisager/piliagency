@@ -40,6 +40,11 @@ export const feature = {
 			type: "boolean",
 			validation: (Rule) => Rule.required(),
 		},
+		{
+			name: "button",
+			title: "Button",
+			type: "link",
+		},
 	],
 	preview: {
 		select: {

@@ -5,6 +5,7 @@ import { defineConfig } from "sanity";
 import { deskTool } from "sanity/desk";
 import { unsplashImageAsset } from "sanity-plugin-asset-source-unsplash";
 import { media } from "sanity-plugin-media";
+import { iconPicker } from "sanity-plugin-icon-picker";
 
 // Go to https://www.sanity.io/docs/api-versioning to learn how API versioning works
 import { apiVersion, dataset, projectId } from "./sanity/env";
@@ -22,7 +23,6 @@ const deskStructure = (S) =>
 				.child(
 					S.editor().schemaType("partnersPage").documentId("partnersPage")
 				),
-			// Add a visual divider (optional)
 			S.divider(),
 			// List out the rest of the document types, but filter out the config type
 			...S.documentTypeListItems().filter(
@@ -43,5 +43,6 @@ export default defineConfig({
 		}),
 		media(),
 		unsplashImageAsset(),
+		iconPicker(),
 	],
 });

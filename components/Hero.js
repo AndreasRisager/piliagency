@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Hero({ block }) {
 	return (
-		<section className="flex flex-col px-4 items-center mt-16 mb-24">
+		<section className="flex flex-col items-center mt-16 mb-24">
 			<div className="max-w-7xl mx-auto text-center">
 				<h1 className="text-[2.7rem] leading-none font-serif font-medium mb-4 text-gray-700 md:text-5xl lg:text-6xl xl:text-7xl">
 					{block?.title}
@@ -22,7 +22,7 @@ export default function Hero({ block }) {
 					<button
 						onClick={() =>
 							window.scrollTo({
-								top: 1500,
+								top: 1200,
 								behavior: "smooth",
 							})
 						}

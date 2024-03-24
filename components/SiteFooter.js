@@ -26,10 +26,13 @@ export default function SiteFooter() {
 							<Link href="/kontakt">Kontakt</Link>
 						</li>
 						<li>
-							<Link href="/creators">Creators</Link>
+							<Link href="/om-os">Om os</Link>
 						</li>
 						<li>
 							<Link href="/cases">Cases</Link>
+						</li>
+						<li>
+							<Link href="/creators">Creators</Link>
 						</li>
 						<li>
 							<Link href="/partners">Partners</Link>

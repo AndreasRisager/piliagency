@@ -8,6 +8,7 @@
  *    type: 'blockContent'
  *  }
  */
+import { TruncateIcon } from "@sanity/icons";
 
 export const blockContent = {
 	title: "Block Content",
@@ -23,11 +24,12 @@ export const blockContent = {
 			// use your content.
 			styles: [
 				{ title: "Normal", value: "normal" },
-				{ title: "H1", value: "h2" },
-				{ title: "H2", value: "h3" },
-				{ title: "H3", value: "h4" },
-				{ title: "H4", value: "h5" },
-				{ title: "H5", value: "h6" },
+				{ title: "H1", value: "h1" },
+				{ title: "H2", value: "h2" },
+				{ title: "H3", value: "h3" },
+				{ title: "H4", value: "h4" },
+				{ title: "H5", value: "h5" },
+				{ title: "H6", value: "h6" },
 				{ title: "Quote", value: "blockquote" },
 			],
 			lists: [
@@ -39,6 +41,20 @@ export const blockContent = {
 				// Decorators usually describe a single property – e.g. a typographic
 				// preference or highlighting by editors.
 				decorators: [
+					{
+						title: "Centered",
+						value: "centered",
+						icon: TruncateIcon,
+						component: ({ children }) => (
+							<span
+								style={{
+									textAlign: "center",
+									display: "block",
+								}}>
+								{children}
+							</span>
+						),
+					},
 					{ title: "Strong", value: "strong" },
 					{ title: "Emphasis", value: "em" },
 					{ title: "Code", value: "code" },
@@ -68,13 +84,6 @@ export const blockContent = {
 		{
 			type: "image",
 			options: { hotspot: true },
-			fields: [
-				{
-					name: "alt",
-					type: "string",
-					title: "Caption",
-				},
-			],
 		},
 	],
 };

@@ -6,6 +6,13 @@ export const home = {
 	type: "document",
 	fields: [
 		defineField({
+			name: "slug",
+			title: "Slug",
+			type: "slug",
+			initialValue: "/",
+			hidden: true,
+		}),
+		defineField({
 			name: "pageBuilder",
 			type: "array",
 			title: "Page Content",

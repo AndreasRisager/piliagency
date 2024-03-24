@@ -52,6 +52,17 @@ export default function SiteHeader() {
 							</li>
 							<li>
 								<Link
+									href="/om-os"
+									className={`${
+										pathname === "/om-os"
+											? "text-white bg-beige md:text-beige md:bg-transparent"
+											: "text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-beige"
+									} block py-2 pr-4 pl-3 rounded md:p-0`}>
+									Om os
+								</Link>
+							</li>
+							<li>
+								<Link
 									href="/cases"
 									className={`${
 										pathname === "/cases"

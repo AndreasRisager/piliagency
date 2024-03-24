@@ -1,3 +1,5 @@
+import { preview } from "sanity-plugin-icon-picker";
+
 export const creators = {
 	name: "creators",
 	title: "Creators",
@@ -60,43 +62,50 @@ export const creators = {
 			},
 		},
 		{
-			name: "instagram",
-			title: "Instagram",
-			placeholder: "username",
-			type: "string",
-		},
-		{
-			name: "audience",
-			title: "Audience",
-			type: "object",
-			fields: [
+			name: "medialinks",
+			title: "Links",
+			type: "array",
+			of: [
 				{
-					name: "text",
-					title: "Text",
-					type: "string",
-				},
-				{
-					name: "followers",
-					title: "Followers",
-					type: "string",
-				},
-				{
-					name: "denmark",
-					description: "Percent lives in Denmark",
-					title: "Denmark",
-					type: "number",
-				},
-				{
-					name: "women",
-					description: "Percent is women",
-					title: "Women",
-					type: "number",
-				},
-				{
-					name: "men",
-					description: "Percent is men",
-					title: "Men",
-					type: "number",
+					name: "medialink",
+					title: "Link",
+					type: "object",
+					fields: [
+						{
+							name: "url",
+							title: "URL",
+							type: "url",
+						},
+						{
+							name: "text",
+							title: "Link Text",
+							type: "string",
+						},
+						{
+							name: "icon",
+							title: "Icon",
+							type: "iconPicker",
+							options: {
+								outputFormat: "react",
+								storeSvg: true,
+								providers: ["si"],
+							},
+						},
+					],
+					preview: {
+						select: {
+							title: "text",
+							subtitle: "url",
+							media: "icon",
+						},
+						prepare({ title, subtitle, media }) {
+							return {
+								title,
+								media: media ? preview(media) : "",
+								subtitle,
+							};
+						},
+					},
 				},
 			],
 		},
@@ -104,7 +113,6 @@ export const creators = {
 	preview: {
 		select: {
 			title: "name",
-			subtitle: "instagram",
 			media: "images.0.asset",
 		},
 		prepare({ title, subtitle, media }) {

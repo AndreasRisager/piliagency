@@ -9,21 +9,25 @@ import Partners from "./Partners";
 import AboutUs from "./AboutUs";
 import Feature from "./Feature";
 import FeaturedCases from "./FeaturedCases";
-
-const Components = {
-	caseHero: CaseHero,
-	textContent: CaseTextContent,
-	showCreators: CaseCreators,
-	gallery: Gallery,
-	videoGallery: CaseVideoGallery,
-	hero: Hero,
-	partners: Partners,
-	about: AboutUs,
-	feature: Feature,
-	featuredCases: FeaturedCases,
-};
+import { RichTextComponents } from "./RichTextComponents";
+import { PortableText } from "@portabletext/react";
 
 export default function PageBuilder({ block }) {
+	const Components = {
+		caseHero: CaseHero,
+		textEditor: ({ block }) => (
+			<PortableText value={block?.content} components={RichTextComponents} />
+		),
+		textContent: CaseTextContent,
+		showCreators: CaseCreators,
+		gallery: Gallery,
+		videoGallery: CaseVideoGallery,
+		hero: Hero,
+		partners: Partners,
+		about: AboutUs,
+		feature: Feature,
+		featuredCases: FeaturedCases,
+	};
 	let Component = Components[block._type];
 
 	// component does exist

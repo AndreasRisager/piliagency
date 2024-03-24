@@ -13,6 +13,9 @@ import { partners } from "./schemas/home/partners";
 import { about } from "./schemas/home/about";
 import { partnersPage } from "./schemas/partnersPage";
 import { featuredCases } from "./schemas/home/featuredCases";
+import { pages } from "./schemas/pages";
+import { pageBuilder } from "./schemas/pageBuilder";
+import LinkSchema from "./schemas/LinkSchema";
 
 export const schema = {
 	types: [
@@ -21,6 +24,7 @@ export const schema = {
 		cases,
 		creators,
 		partnersPage,
+		pages,
 		feature,
 		blockContent,
 		caseHero,
@@ -31,5 +35,7 @@ export const schema = {
 		partners,
 		about,
 		featuredCases,
+		pageBuilder,
+		LinkSchema,
 	],
 };

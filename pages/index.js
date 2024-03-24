@@ -77,6 +77,13 @@ const query = groq`
 			},
 			_type == "feature" => {
 				...,
+				button {
+					...,
+					internal-> {
+						...,
+						slug,
+					}
+				},
 				image {
 					...,
 					asset-> {

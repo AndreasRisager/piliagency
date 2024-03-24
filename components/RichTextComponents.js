@@ -9,10 +9,10 @@ export const RichTextComponents = {
 			<div className="my-10">
 				<Image
 					className="w-full object-contain"
-					src={urlForImage(value).width(608).url()}
-					alt="bio image"
-					width={608}
-					height={608}
+					src={urlForImage(value).width(1200).url()}
+					alt="content image"
+					width={1200}
+					height={1200}
 				/>
 			</div>
 		),
@@ -23,6 +23,7 @@ export const RichTextComponents = {
 	},
 	block: {
 		normal: ({ children }) => <p className="my-2">{children}</p>,
+		h1: ({ children }) => <h1 className="text-5xl my-5">{children}</h1>,
 		h2: ({ children }) => <h2 className="text-4xl my-5">{children}</h2>,
 		h3: ({ children }) => <h3 className="text-3xl my-5">{children}</h3>,
 		h4: ({ children }) => <h4 className="text-2xl my-5">{children}</h4>,
@@ -36,8 +37,12 @@ export const RichTextComponents = {
 		),
 	},
 	marks: {
-		code: ({ children }) => <code className="font-mono">{children}</code>,
-
+		code: ({ children }) => (
+			<code className="font-mono bg-gray-100 p-1">{children}</code>
+		),
+		centered: ({ children }) => (
+			<span className="block text-center">{children}</span>
+		),
 		link: ({ children, value }) => {
 			const rel = !value.href.startsWith("/")
 				? "noreferrer noopener"

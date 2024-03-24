@@ -7,6 +7,7 @@ import { urlForImage } from "../../sanity/lib/image";
 import PageBuilder from "../../components/PageBuilder";
 
 export default function CasePage({ caseItem }) {
+	console.log(caseItem);
 	return (
 		<Layout
 			title={caseItem?.title}
