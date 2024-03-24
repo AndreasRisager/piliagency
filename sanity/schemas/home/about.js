@@ -14,7 +14,7 @@ export const about = {
 		{
 			name: "description",
 			title: "Description",
-			type: "string",
+			type: "text",
 		},
 		{
 			name: "image",

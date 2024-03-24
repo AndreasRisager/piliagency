@@ -15,7 +15,7 @@ export const hero = {
 		{
 			name: "description",
 			title: "Description",
-			type: "string",
+			type: "text",
 			validation: (Rule) => Rule.required(),
 		},
 		{

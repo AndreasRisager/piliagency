@@ -15,7 +15,7 @@ export const feature = {
 		{
 			name: "text",
 			title: "Text",
-			type: "string",
+			type: "text",
 			validation: (Rule) => Rule.required(),
 		},
 		{

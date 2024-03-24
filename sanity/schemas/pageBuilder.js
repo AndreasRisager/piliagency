@@ -75,10 +75,4 @@ export const pageBuilder = {
 			type: "videoGallery",
 		}),
 	],
-	options: {
-		modal: {
-			type: "dialog",
-			width: "100%",
-		},
-	},
 };
