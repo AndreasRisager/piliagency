@@ -7,7 +7,9 @@ import Balancer from "react-wrap-balancer";
 export default function CaseHero({ block }) {
 	return (
 		<>
-			<div className="max-w-3xl mx-auto mt-24 mb-8 text-center relative min-h-[215px] flex flex-col justify-center items-center">
+			<div
+				className="max-w-3xl mx-auto mt-24 mb-8 text-center relative min-h-[215px] flex flex-col justify-center items-center"
+				id={block._type + "_" + block._key}>
 				<svg
 					width="600px"
 					height="360px"

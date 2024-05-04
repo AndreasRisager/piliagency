@@ -27,6 +27,7 @@ export default function FeaturedCases({ block }) {
 	return (
 		<section
 			className="overflow-hidden mb-32"
+			id={block._type + "_" + block._key}
 			onMouseEnter={() => setAutoSlide(false)}
 			onMouseLeave={() => setAutoSlide(true)}>
 			<div className="flex flex-col items-center justify-between mx-4 md:mx-8">

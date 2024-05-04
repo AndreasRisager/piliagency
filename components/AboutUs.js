@@ -5,7 +5,9 @@ import { urlForImage } from "../sanity/lib/image";
 
 export default function AboutUs({ block }) {
 	return (
-		<section className="max-w-7xl mx-auto my-32" id="om">
+		<section
+			className="max-w-7xl mx-auto my-32"
+			id={block._type + "_" + block._key}>
 			<Image
 				src={urlForImage(block?.image).width(1280).url()}
 				width={1280}

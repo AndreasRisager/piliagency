@@ -2,7 +2,9 @@ import React from "react";
 
 export default function CaseVideoGallery({ block }) {
 	return (
-		<div className="flex flex-wrap sm:flex-nowrap gap-4 rounded-md bg-gray-100 p-4 justify-evenly my-4">
+		<div
+			className="flex flex-wrap sm:flex-nowrap gap-4 rounded-md bg-gray-100 p-4 justify-evenly my-4"
+			id={block._type + "_" + block._key}>
 			{block?.videos?.map((video) => (
 				<figure key={video._key} className="my-4 mx-auto">
 					<video

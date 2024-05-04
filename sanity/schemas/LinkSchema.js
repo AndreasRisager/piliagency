@@ -11,18 +11,15 @@ export default {
 		{
 			name: "external",
 			type: "url",
-			title: "URL",
+			title: "External URL",
+			description: "example: https://www.pepsi.com",
 			hidden: ({ parent, value }) => !value && !!parent?.internal,
 		},
 		{
 			name: "internal",
-			type: "reference",
-			to: [
-				{ type: "pages" },
-				{ type: "partnersPage" },
-				{ type: "home" },
-				{ type: "cases" },
-			],
+			type: "string",
+			title: "Internal URL",
+			description: "example: /cases/pepsi",
 			hidden: ({ parent, value }) => !value && !!parent?.external,
 		},
 	],

@@ -5,7 +5,9 @@ import LinkButton from "./LinkButton";
 
 export default function Feature({ block }) {
 	return (
-		<section className="px-4 max-w-7xl mx-auto my-32">
+		<section
+			className="px-4 max-w-7xl mx-auto my-32"
+			id={block._type + "_" + block._key}>
 			{!block.fullWidth ? (
 				<div
 					className="grid sm:grid-cols-2 items-center gap-4"

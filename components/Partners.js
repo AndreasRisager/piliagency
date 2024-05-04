@@ -6,7 +6,9 @@ import { urlForImage } from "../sanity/lib/image";
 
 export default function Partners({ block }) {
 	return (
-		<section className="max-w-7xl mx-auto px-4 my-32">
+		<section
+			className="max-w-7xl mx-auto px-4 my-32"
+			id={block._type + "_" + block._key}>
 			<div className="max-w-4xl mx-auto text-center mb-8">
 				<h2 className="text-3xl font-medium uppercase break-words">
 					{block?.title}

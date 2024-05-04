@@ -16,7 +16,9 @@ export default function PageBuilder({ block }) {
 	const Components = {
 		caseHero: CaseHero,
 		textEditor: ({ block }) => (
-			<PortableText value={block?.content} components={RichTextComponents} />
+			<section id={block._type + "_" + block._key}>
+				<PortableText value={block?.content} components={RichTextComponents} />
+			</section>
 		),
 		textContent: CaseTextContent,
 		showCreators: CaseCreators,

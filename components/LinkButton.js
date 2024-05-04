@@ -6,13 +6,7 @@ export default function LinkButton({ href, className, children }) {
 		<>
 			{href?.internal ? (
 				<Link
-					href={
-						href.internal._type === "cases"
-							? "/cases/" + href.internal.slug.current
-							: href.internal._type === "creators"
-							? "/creators/" + href.internal.slug.current
-							: href.internal.slug.current
-					}
+					href={href.internal}
 					className={`inline-block border rounded-md text-lg px-6 py-2 font-medium bg-beige text-white hover:bg-beigehover hover:ring-2 hover:ring-beigehover ${className}`}>
 					{children}
 				</Link>

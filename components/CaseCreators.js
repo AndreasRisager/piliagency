@@ -5,7 +5,9 @@ import Link from "next/link";
 
 export default function CaseCreators({ block }) {
 	return (
-		<div className="bg-gray-100 py-24 rounded-md my-4">
+		<section
+			className="bg-gray-100 py-24 rounded-md my-4"
+			id={block._type + "_" + block._key}>
 			<div className="max-w-[1920px] mx-auto flex flex-wrap gap-x-3 gap-y-8 p-4 justify-evenly">
 				{block?.creators?.map((creator) => (
 					<div key={creator._id}>
@@ -35,6 +37,6 @@ export default function CaseCreators({ block }) {
 					</div>
 				))}
 			</div>
-		</div>
+		</section>
 	);
 }

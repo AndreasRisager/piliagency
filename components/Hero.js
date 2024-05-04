@@ -1,11 +1,13 @@
-import Link from "next/link";
 import Balancer from "react-wrap-balancer";
 import { urlForImage } from "../sanity/lib/image";
 import Image from "next/image";
+import LinkButton from "./LinkButton";
 
 export default function Hero({ block }) {
 	return (
-		<section className="flex flex-col items-center mt-16 mb-24">
+		<section
+			className="flex flex-col items-center mt-16 mb-24"
+			id={block._type + "_" + block._key}>
 			<div className="max-w-7xl mx-auto text-center">
 				<h1 className="text-[2.7rem] leading-none font-serif font-medium mb-4 text-gray-700 md:text-5xl lg:text-6xl xl:text-7xl">
 					{block?.title}
@@ -14,21 +16,18 @@ export default function Hero({ block }) {
 					<Balancer>{block?.description}</Balancer>
 				</p>
 				<div className="flex justify-center mt-6 gap-4">
-					<Link
-						href="/kontakt"
-						className="border rounded-md text-lg px-6 py-2 font-medium bg-beige text-white hover:bg-beigehover hover:ring-2 hover:ring-beigehover">
-						Kontakt os
-					</Link>
-					<button
-						onClick={() =>
-							window.scrollTo({
-								top: 1200,
-								behavior: "smooth",
-							})
-						}
-						className="border rounded-md text-lg px-6 py-2 font-medium hover:bg-beigehover hover:ring-2 hover:ring-beigehover">
-						Læs mere
-					</button>
+					{block?.primaryButton ? (
+						<LinkButton href={block.primaryButton}>
+							{block.primaryButton?.text}
+						</LinkButton>
+					) : null}
+					{block?.secondaryButton ? (
+						<LinkButton
+							href={block.secondaryButton}
+							className="bg-white !text-black">
+							{block.secondaryButton?.text}
+						</LinkButton>
+					) : null}
 				</div>
 				{block.image && (
 					<figure className="mt-20">

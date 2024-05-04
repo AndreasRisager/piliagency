@@ -26,6 +26,16 @@ export const hero = {
 				hotspot: true,
 			},
 		},
+		{
+			name: "primaryButton",
+			title: "Primary Button",
+			type: "link",
+		},
+		{
+			name: "secondaryButton",
+			title: "Secondary Button",
+			type: "link",
+		},
 	],
 	preview: {
 		select: {

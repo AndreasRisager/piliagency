@@ -5,7 +5,10 @@ import { urlForImage } from "../sanity/lib/image";
 export default function Gallery({ block }) {
 	if (block.display === "fullWidth") {
 		return block?.images?.map((image) => (
-			<figure key={image._key} className="my-4">
+			<figure
+				key={image._key}
+				className="my-4"
+				id={block._type + "_" + block._key}>
 				<Image
 					src={urlForImage(image).url()}
 					alt={image.asset.altText}
@@ -25,7 +28,9 @@ export default function Gallery({ block }) {
 	}
 	if (block.display === "stacked") {
 		return (
-			<div className="columns-2 space-y-4 my-4">
+			<div
+				className="columns-2 space-y-4 my-4"
+				id={block._type + "_" + block._key}>
 				{block?.images?.map((image) => (
 					<figure key={image._key}>
 						<Image
@@ -48,7 +53,9 @@ export default function Gallery({ block }) {
 		);
 	}
 	return (
-		<div className="flex flex-wrap sm:flex-nowrap gap-4 my-4">
+		<div
+			className="flex flex-wrap sm:flex-nowrap gap-4 my-4"
+			id={block._type + "_" + block._key}>
 			{block?.images?.map((image) => (
 				<figure key={image._key} className="w-[calc(50%-0.5rem)] my-4 mx-auto">
 					<Image
