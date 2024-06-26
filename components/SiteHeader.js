@@ -8,7 +8,7 @@ export default function SiteHeader() {
 
 	return (
 		<header className="text-gray-700 bg-white sticky top-0 w-full z-50 supports-[backdrop-filter]:bg-white/90 supports-[backdrop-filter]:backdrop-blur-sm">
-			<nav className="p-4 max-w-7xl mx-auto">
+			<nav className="p-4 max-w-screen-2xl mx-auto">
 				<div className="flex flex-wrap justify-between items-center">
 					<Link href="/" className="text-2xl font-semibold">
 						Pili Agency

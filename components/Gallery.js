@@ -11,7 +11,7 @@ export default function Gallery({ block }) {
 				id={block._type + "_" + block._key}>
 				<Image
 					src={urlForImage(image).url()}
-					alt={image.asset.altText}
+					alt={image.asset.altText || "gallery image"}
 					className="object-cover w-full rounded-md bg-gray-100 h-auto max-h-innerheight"
 					height={1080}
 					width={1920}
@@ -35,7 +35,7 @@ export default function Gallery({ block }) {
 					<figure key={image._key}>
 						<Image
 							src={urlForImage(image).url()}
-							alt={image.asset.altText}
+							alt={image.asset.altText || "gallery image"}
 							className="object-cover rounded-md bg-gray-100 w-full"
 							height={1080}
 							width={936}
@@ -60,7 +60,7 @@ export default function Gallery({ block }) {
 				<figure key={image._key} className="w-[calc(50%-0.5rem)] my-4 mx-auto">
 					<Image
 						src={urlForImage(image).url()}
-						alt={image.asset.altText}
+						alt={image.asset.altText || "gallery image"}
 						className="w-full rounded-md bg-gray-100 h-auto max-h-innerheight object-cover"
 						height={676}
 						width={1004}

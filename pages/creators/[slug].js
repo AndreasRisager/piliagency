@@ -16,33 +16,33 @@ export default function CreatorPage({ creator }) {
 			image={
 				creator?.images?.[0] ? urlForImage(creator?.images?.[0]).url() : ""
 			}>
-			<main className="max-w-7xl w-screen mx-auto px-4 md:mt-12 mb-20">
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+			<main className="max-w-screen-2xl mx-auto px-4 md:mt-12 mb-20">
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
 					<div
-						className={`lg:col-span-3 ${
-							creator?.images.length > 1 && "columns-2 space-y-4"
+						className={`order-2 md:order-none ${
+							creator?.images.length > 1 ? "columns-2 space-y-4" : ""
 						}`}>
 						{creator?.images?.map((image, index) => (
 							<Image
 								className="w-full"
 								src={urlForImage(image).url()}
-								height={400}
-								width={400}
+								height={1091}
+								width={728}
 								priority={index < 4}
 								key={image._key}
-								alt={image.asset.altText}
+								alt={image.asset.altText || creator?.name}
 								placeholder={image.asset.metadata?.lqip ? "blur" : "empty"}
 								blurDataURL={image.asset.metadata?.lqip}
 							/>
 						))}
 					</div>
-					<div className="lg:col-span-2 relative">
+					<div className="relative">
 						{creator?.tags && (
 							<div className="overflow-hidden w-full">
-								<ul className="flex flex-nowrap whitespace-nowrap space-x-7 overflow-x-auto pb-2 border-b no-scrollbar">
+								<ul className="flex flex-nowrap whitespace-nowrap gap-2 overflow-x-auto no-scrollbar">
 									{creator.tags.map((tag) => (
 										<li
-											className="first-of-type:list-none list-item list-disc list"
+											className="text-sm border rounded-full py-1 px-3.5 text-gray-600"
 											key={tag}>
 											{tag}
 										</li>

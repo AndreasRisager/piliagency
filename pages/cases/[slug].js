@@ -7,12 +7,11 @@ import { urlForImage } from "../../sanity/lib/image";
 import PageBuilder from "../../components/PageBuilder";
 
 export default function CasePage({ caseItem }) {
-	console.log(caseItem);
 	return (
 		<Layout
 			title={caseItem?.title}
 			image={caseItem?.thumbnail ? urlForImage(caseItem.thumbnail).url() : ""}>
-			<main className="max-w-[1920px] w-screen mx-auto px-4 overflow-hidden">
+			<main className="max-w-screen-2xl w-screen mx-auto px-4 overflow-hidden">
 				{caseItem?.pageBuilder?.map((block, index) => (
 					<PageBuilder block={block} key={block._key || index} />
 				))}
@@ -30,6 +29,7 @@ export async function getStaticProps({ params: { slug } }) {
 			...,
 			_type == "caseHero" => {
 				...,
+				"name": ^.title,
 				image {
 					...,
 					asset-> {

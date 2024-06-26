@@ -22,7 +22,7 @@ export const RichTextComponents = {
 		number: ({ children }) => <ol className="ml-6 list-decimal">{children}</ol>,
 	},
 	block: {
-		normal: ({ children }) => <p className="my-2">{children}</p>,
+		normal: ({ children }) => <p className="my-3">{children}</p>,
 		h1: ({ children }) => <h1 className="text-5xl my-5">{children}</h1>,
 		h2: ({ children }) => <h2 className="text-4xl my-5">{children}</h2>,
 		h3: ({ children }) => <h3 className="text-3xl my-5">{children}</h3>,

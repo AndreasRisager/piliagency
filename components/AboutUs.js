@@ -15,6 +15,7 @@ export default function AboutUs({ block }) {
 				className="w-full max-h-[800px] object-cover"
 				placeholder={block.image.asset.metadata?.lqip ? "blur" : "empty"}
 				blurDataURL={block.image.asset.metadata?.lqip}
+				alt="om os"
 			/>
 			<div className="px-4 max-w-4xl mx-auto text-center -mt-12">
 				<div className="bg-white rounded-md p-8 supports-[backdrop-filter]:bg-white/90 supports-[backdrop-filter]:backdrop-blur-sm">

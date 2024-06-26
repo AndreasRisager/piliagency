@@ -29,6 +29,7 @@ export default function Partners({ block }) {
 							width={100}
 							height={50}
 							className="mx-auto max-h-12 object-contain basis-28"
+							alt="partner logo"
 						/>
 					))}
 			</div>

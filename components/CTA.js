@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function CTA({ heading, subheading, link, linkname }) {
 	return (
-		<section className="py-8 text-gray-900 bg-white sm:py-12 md:py-16 lg:py-24">
-			<div className="max-w-7xl px-4 mx-auto border-solid">
+		<section className="mt-32 mb-12 max-w-screen-2xl mx-auto px-4">
+			<div className="rounded-md border-solid h-full w-full bg-neutral-50/50 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] p-8 text-gray-900 sm:p-12 md:p-16 lg:p-24">
 				<div className="flex flex-col items-start leading-7 text-gray-900 border-0 border-gray-200 lg:items-center lg:flex-row">
 					<div className="box-border flex-1 text-center border-solid sm:text-left mr-0 lg:mr-6">
 						<h2 className="m-0 text-4xl font-semibold leading-tight tracking-tight text-left text-black border-0 border-gray-200 sm:text-5xl max-w-3xl">

@@ -8,7 +8,7 @@ import PageBuilder from "../components/PageBuilder";
 export default function Pages({ page }) {
 	return (
 		<Layout title={page?.title} description={page?.description}>
-			<main className="max-w-7xl w-screen mx-auto px-4 md:mt-12 mb-20">
+			<main className="max-w-7xl w-screen mx-auto md:mt-12 mb-20">
 				{page?.pageBuilder?.map((block, index) => (
 					<PageBuilder block={block} key={block._key || index} />
 				))}

@@ -4,7 +4,7 @@ import Balancer from "react-wrap-balancer";
 
 export default function SiteFooter() {
 	return (
-		<footer className="mx-auto max-w-7xl px-4 py-8">
+		<footer className="px-4 py-8 mx-auto max-w-screen-2xl">
 			<div className="flex flex-col sm:flex-row items-center sm:items-end text-center gap-y-12 gap-x-4 mb-12">
 				<div className="flex-1 z-10 flex flex-col items-center sm:items-stretch text-center sm:text-start">
 					<Image
@@ -51,7 +51,8 @@ export default function SiteFooter() {
 					</p>
 				</div>
 			</div>
-			<div className="flex flex-col items-center sm:flex-row text-center sm:text-start pt-8 border-t border-gray-300">
+			<div className="border-t border-gray-300"></div>
+			<div className="flex flex-col items-center sm:flex-row text-center sm:text-start pt-8">
 				<a
 					href="/"
 					className="text-xl font-bold leading-none text-gray-900 select-none">
